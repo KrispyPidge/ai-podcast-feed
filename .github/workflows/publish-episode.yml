@@ -1,0 +1,75 @@
+# Publish a new podcast episode daily.
+#
+# This workflow:
+# 1. Checks out the repo
+# 2. Reads the podcast script (from latest-digest.txt, workflow input, or repository_dispatch)
+# 3. Runs Edge TTS to generate audio (no API keys needed!)
+# 4. Commits the new MP3 and updated feed.xml back to the repo
+#
+# The audio is served via GitHub Pages from the main branch.
+
+name: Publish Episode
+
+on:
+  # Manual trigger for testing
+  workflow_dispatch:
+    inputs:
+      digest_text:
+        description: 'Paste podcast script here (optional — otherwise uses latest-digest.txt)'
+        required: false
+        type: string
+
+  # API trigger — used by the scheduled task to send the podcast script
+  repository_dispatch:
+    types: [publish-episode]
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Prepare digest
+        env:
+          DISPATCH_TEXT: ${{ github.event.client_payload.digest_text }}
+          INPUT_TEXT: ${{ github.event.inputs.digest_text }}
+        run: |
+          if [ -n "$DISPATCH_TEXT" ]; then
+            printf '%s' "$DISPATCH_TEXT" > digest.txt
+            echo "Source: repository_dispatch"
+          elif [ -n "$INPUT_TEXT" ]; then
+            printf '%s' "$INPUT_TEXT" > digest.txt
+            echo "Source: workflow_dispatch"
+          elif [ -f "latest-digest.txt" ]; then
+            cp latest-digest.txt digest.txt
+            echo "Source: latest-digest.txt"
+          else
+            echo "No digest found. Provide text via dispatch or commit latest-digest.txt." >&2
+            exit 1
+          fi
+          echo "Digest length: $(wc -c < digest.txt) bytes"
+
+      - name: Generate episode
+        run: python scripts/publish.py digest.txt --local
+
+      - name: Commit and push
+        run: |
+          git config user.name "Podcast Bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add episodes/ feed.xml
+          git commit -m "New episode: $(date +%Y-%m-%d)" || echo "No changes to commit"
+          git push

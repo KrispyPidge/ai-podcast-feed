@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chris's Morning Briefing</title>
+    <link>https://krispypidge.github.io/ai-podcast-feed</link>
+    <description>A daily AI-generated audio digest — news, updates, and quick hits.</description>
+    <language>en-us</language>
+    <itunes:author>Chris</itunes:author>
+    <itunes:image href="https://krispypidge.github.io/ai-podcast-feedassets/cover.jpg"/>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:category text="Technology"/>
+    <atom:link href="https://krispypidge.github.io/ai-podcast-feedfeed.xml" rel="self" type="application/rss+xml"/>
+    <!-- Episodes will be added here by the publish script -->
+  </channel>
+</rss>
