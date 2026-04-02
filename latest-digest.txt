@@ -1,0 +1,49 @@
+Good morning! Here's your daily A.I. digest for Wednesday, April 2nd, 2026.
+
+Starting with the top story.
+
+Google's Gemini three point one Pro is now leading thirteen out of sixteen major A.I. benchmarks. It scored seventy-seven point one percent on arc A.G.I. two, which is more than double its predecessor, and ninety-four point three percent on G.P.Q.A. Diamond, beating both Claude Opus four, point six and G.P.T. five point two. But here's the real kicker: it ties G.P.T. five point four Pro on the Artificial Analysis Intelligence Index at roughly one third of the A.P.I. cost. For anyone building on top of frontier models, this seriously changes the cost versus performance math.
+
+Next up, L.L.Ms and coding tools.
+
+G.P.T. five point five, codenamed "Spud," has finished pretraining and a public launch is expected in Q 2. OpenAI is also consolidating everything, including video generation, into a unified super app. They've already shut down the standalone Sora app as part of that move.
+
+Claude Mythos has leaked. Anthropic reportedly trained a model it's calling a "step change" beyond Opus four, point six. It's currently in early access with cybersecurity partners. Analysts put a roughly twenty-five percent chance of a public announcement before April 30th. Definitely one to keep an eye on.
+
+Meta Llama four, Maverick dropped. Four, hundred billion parameters, a ten million token context window, and free to run on your own infrastructure. It's the strongest open-weight model available right now by a wide margin.
+
+Cursor's big 2026 update enables what they're calling "agent swarms." Composer can now parallelise subtasks instead of processing them one at a time. A real upgrade for multi-file projects. GitHub Copilot also now lets you pick Claude, Codex, or Copilot as the underlying model, which has been available since February.
+
+And the vibe coding era has officially levelled up. The narrative has shifted from "generating code" to "vibe shipping," which means actually deploying full products. Google even launched a dedicated full-stack vibe coding experience in A.I. Studio. Harvard Gazette ran a piece this month calling vibe coding a preview of our A.I. future.
+
+In industry and business news.
+
+OpenAI closed a three billion dollar funding round led by Amazon, Nvidia, and SoftBank, valuing the company at eight hundred and fifty-two billion dollars. The A.I. investment frenzy is not slowing down.
+
+The White House dropped its National A.I. Policy Framework on March 20th, recommending Congress pass unified federal A.I. regulation covering child safety, data centre energy use, and chip exports, with a key goal of federally pre-empting state-level A.I. laws.
+
+The Commerce Department began accepting proposals on April 1st for companies to export full-stack A.I. technology packages under Trump's A.I. Action Plan, a notable move for U S A.I. competitiveness abroad.
+
+Global A.I. news licensing battles are escalating. Brazil, Europe, Indonesia, and W.I.P.O. are all exploring laws that would require A.I. companies to pay publishers for training data. This could reshape how foundation models are built and priced.
+
+And Anthropic launched the Anthropic Institute, a new research arm focused on the economic, societal, and security impacts of advanced A.I., a signal they're getting more serious about policy-adjacent work.
+
+In gaming and A.I..
+
+Fifty percent of game studios now actively use A.I. in development, according to the B.C.G. 2026 Global Gaming Report. Over seven thousand three hundred Steam games have disclosed A.I. use, which is double the 2024 number. But here's the catch: fifty-two percent of game devs now view generative A.I. negatively, up from thirty percent in 2025, and eighty-five percent of gamers are sceptical. The tech is spreading fast, but the community trust gap is a real challenge.
+
+Inworld A.I.'s agent runtime is gaining momentum for expressive, low-latency conversational N.P.C.s with persistent memory, emotional states, and evolving dialogue. Worth watching for game server communities or anyone building narrative-driven experiences.
+
+And some quick hits.
+
+x.A.I. launched Grok four, point two zero with a new multi-agent architecture, entering the agentic workflow race. Details are still sparse.
+
+Google's Gemini three point one Flash Lite is built for speed and cost: two and a half times faster responses, forty-five percent faster output, at just twenty-five cents per million input tokens. Great for high-volume, low-cost use cases.
+
+Vibe coding searches on Google are up two thousand, four hundred percent since January 2025, with the global market now projected at eight point five billion dollars. If you're not experimenting yet, now's the time.
+
+And finally, one thing to try today.
+
+Fire up Cursor's agent swarms feature on your next vibe coding project. Instead of letting Composer handle tasks one at a time, frame your prompt so it can break work into parallel subtasks, and it'll tackle multiple files and components at the same time. Pair it with Claude Code for the heavier reasoning and architecture decisions, and you've got a genuinely fast full-stack build loop. Start small: a Discord bot, a stream overlay, or a quick server management utility. You'll feel the speed difference immediately.
+
+That's your digest for today. Have a good one!

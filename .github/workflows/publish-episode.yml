@@ -11,6 +11,11 @@
 name: Publish Episode
 
 on:
+  # Auto-trigger when the scheduled task pushes a new podcast script
+  push:
+    paths:
+      - 'latest-digest.txt'
+
   # Manual trigger for testing
   workflow_dispatch:
     inputs:
