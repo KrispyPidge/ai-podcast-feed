@@ -114,6 +114,8 @@ def add_episode(
         "date": today,
     }
 
+    # Replace any existing episode for the same date
+    episodes = [e for e in episodes if e.get("date") != today]
     episodes.insert(0, episode)  # newest first
     save_episodes(episodes, episodes_file)
 

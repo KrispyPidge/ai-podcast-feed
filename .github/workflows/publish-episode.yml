@@ -82,6 +82,6 @@ jobs:
         run: |
           git config user.name "Podcast Bot"
           git config user.email "bot@users.noreply.github.com"
-          git add episodes/ feed.xml episodes/episodes.json
+          git add -f episodes/*.mp3 episodes/episodes.json feed.xml
           git commit -m "New episode: $(date +%Y-%m-%d)" || echo "No changes to commit"
           git push
