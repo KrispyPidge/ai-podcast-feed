@@ -1,5 +1,5 @@
 edge-tts>=6.1.0
-pydub>=0.25.1
+mutagen>=1.47.0
 PyGithub>=2.1.1
 python-dotenv>=1.0.0
 Jinja2>=3.1.0

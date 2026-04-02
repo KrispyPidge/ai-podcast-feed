@@ -62,9 +62,9 @@ def save_episodes(episodes: list[dict], episodes_file: str):
 
 def get_audio_duration(mp3_path: str) -> str:
     """Get duration of an MP3 file as HH:MM:SS."""
-    from pydub import AudioSegment
-    audio = AudioSegment.from_mp3(mp3_path)
-    total_seconds = int(len(audio) / 1000)
+    from mutagen.mp3 import MP3
+    audio = MP3(mp3_path)
+    total_seconds = int(audio.info.length)
     hours = total_seconds // 3600
     minutes = (total_seconds % 3600) // 60
     seconds = total_seconds % 60
