@@ -3,16 +3,26 @@
      xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
      xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AI Morning Digest</title>
-    <link></link>
-    <description>A daily AI-generated audio digest.</description>
+    <title>Chris's Morning Briefing</title>
+    <link>https://krispypidge.github.io/ai-podcast-feed</link>
+    <description>A daily AI-generated audio digest — news, updates, and quick hits.</description>
     <language>en-us</language>
     <itunes:author>Chris</itunes:author>
-    <itunes:image href=""/>
+    <itunes:image href="https://krispypidge.github.io/ai-podcast-feed/assets/cover.jpg"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:category text="Technology"/>
-    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 02 Apr 2026 19:34:51 +0000</lastBuildDate>
+    <atom:link href="https://krispypidge.github.io/ai-podcast-feed/feed.xml" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>Thu, 02 Apr 2026 19:40:34 +0000</lastBuildDate>
+    
+    <item>
+      <title>Daily Digest — Thursday, April 02, 2026</title>
+      <description>Your daily AI-generated audio digest.</description>
+      <enclosure url="https://krispypidge.github.io/ai-podcast-feed/episodes/2026-04-02.mp3" length="2219328" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://krispypidge.github.io/ai-podcast-feed/episodes/2026-04-02.mp3</guid>
+      <pubDate>Thu, 02 Apr 2026 19:40:34 +0000</pubDate>
+      <itunes:duration>6:09</itunes:duration>
+      <itunes:episode>2</itunes:episode>
+    </item>
     
     <item>
       <title>Daily Digest — Thursday, April 02, 2026</title>
