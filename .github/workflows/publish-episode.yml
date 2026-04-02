@@ -31,6 +31,13 @@ on:
 permissions:
   contents: write
 
+env:
+  PODCAST_TITLE: "Chris's Morning Briefing"
+  PODCAST_DESCRIPTION: "A daily AI-generated audio digest — news, updates, and quick hits."
+  PODCAST_AUTHOR: "Chris"
+  PODCAST_LINK: "https://krispypidge.github.io/ai-podcast-feed"
+  PODCAST_IMAGE_URL: "https://krispypidge.github.io/ai-podcast-feed/assets/cover.jpg"
+
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -75,6 +82,6 @@ jobs:
         run: |
           git config user.name "Podcast Bot"
           git config user.email "bot@users.noreply.github.com"
-          git add episodes/ feed.xml
+          git add episodes/ feed.xml episodes/episodes.json
           git commit -m "New episode: $(date +%Y-%m-%d)" || echo "No changes to commit"
           git push
