@@ -1,79 +1,80 @@
 """
-Text-to-Speech converter using Microsoft Edge TTS.
-Zero config, zero cost, natural-sounding voices.
+Text-to-Speech converter using xAI Grok TTS API.
 
-To swap to Google Cloud TTS later, see tts_google.py.
+The podcast script is expected to be pre-formatted for speech with
+Grok TTS tags (e.g. [pause 500ms], <emphasis>word</emphasis>, <slow>...</slow>,
+<whisper>...</whisper>, [laugh]).
+
+Voices: ara, eve, leo, rex, sal
+Docs: https://docs.x.ai/developers/model-capabilities/audio/text-to-speech
 """
 
 import os
 import sys
-import asyncio
-from pathlib import Path
 from datetime import datetime
 
-# Optional: prep_text can pre-process raw digest text for TTS.
-# Not needed when the input is already a podcast script (from the scheduled task).
-try:
-    from prep_text import prep_for_speech
-except ImportError:
-    prep_for_speech = None
+import requests
 
 
-# Edge TTS voices worth trying (all free, all natural-sounding):
-#   en-GB-RyanNeural      — British male, warm and clear (great for news)
-#   en-GB-SoniaNeural     — British female, professional
-#   en-US-GuyNeural       — American male, conversational
-#   en-US-JennyNeural     — American female, friendly
-#   en-US-AriaNeural      — American female, expressive
-#   en-AU-WilliamNeural   — Australian male
-#
-# Full list: run `edge-tts --list-voices`
-
-DEFAULT_VOICE = "en-GB-RyanNeural"
-DEFAULT_RATE = "-5%"  # Slightly slower than normal — gives acronyms room to breathe
-
-
-async def synthesize_speech(
-    text: str,
-    output_path: str,
-    voice: str = DEFAULT_VOICE,
-    rate: str = DEFAULT_RATE,
-    pitch: str = "+0Hz",
-) -> str:
-    """
-    Convert text to speech using Edge TTS.
-
-    Args:
-        text:        The digest text to convert
-        output_path: Where to save the MP3
-        voice:       Edge TTS voice name
-        rate:        Speed adjustment (e.g. "+10%", "-5%")
-        pitch:       Pitch adjustment (e.g. "+5Hz", "-2Hz")
-
-    Returns:
-        Path to the generated MP3 file
-    """
-    import edge_tts
-
-    # Preprocess text if prep_text is available (not needed for pre-written podcast scripts)
-    if prep_for_speech is not None:
-        text = prep_for_speech(text)
-
-    communicate = edge_tts.Communicate(text, voice, rate=rate, pitch=pitch)
-    await communicate.save(output_path)
-    print(f"Audio saved to {output_path}")
-    return output_path
+XAI_TTS_ENDPOINT = "https://api.x.ai/v1/tts"
+DEFAULT_VOICE = os.getenv("XAI_VOICE", "eve")
+DEFAULT_LANGUAGE = "en"
 
 
 def synthesize_speech_sync(
     text: str,
     output_path: str,
-    voice: str = DEFAULT_VOICE,
-    rate: str = DEFAULT_RATE,
-    pitch: str = "+0Hz",
+    voice: str | None = None,
+    rate: str | None = None,   # unused; kept for compatibility with old signature
+    pitch: str | None = None,  # unused; kept for compatibility with old signature
 ) -> str:
-    """Synchronous wrapper around synthesize_speech."""
-    return asyncio.run(synthesize_speech(text, output_path, voice, rate, pitch))
+    """
+    Convert text to speech using xAI Grok TTS API and save as MP3.
+
+    Args:
+        text:        Podcast script (may include Grok TTS tags)
+        output_path: Where to save the MP3
+        voice:       xAI voice id (ara, eve, leo, rex, sal). Defaults to $XAI_VOICE or "eve".
+
+    Returns:
+        Path to the generated MP3 file.
+    """
+    api_key = os.getenv("XAI_API_KEY")
+    if not api_key:
+        raise RuntimeError(
+            "XAI_API_KEY environment variable is not set. "
+            "Add it as a repo secret: Settings -> Secrets and variables -> Actions."
+        )
+
+    voice = voice or DEFAULT_VOICE
+
+    response = requests.post(
+        XAI_TTS_ENDPOINT,
+        headers={
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
+        },
+        json={
+            "text": text,
+            "voice_id": voice,
+            "language": DEFAULT_LANGUAGE,
+        },
+        timeout=120,
+    )
+
+    if response.status_code != 200:
+        raise RuntimeError(
+            f"xAI TTS API failed (status {response.status_code}): {response.text[:500]}"
+        )
+
+    out_dir = os.path.dirname(output_path)
+    if out_dir:
+        os.makedirs(out_dir, exist_ok=True)
+    with open(output_path, "wb") as f:
+        f.write(response.content)
+
+    print(f"Audio saved to {output_path} (voice: {voice}, {len(response.content):,} bytes)")
+    return output_path
 
 
 # --- CLI entry point ---
@@ -81,22 +82,15 @@ if __name__ == "__main__":
     if len(sys.argv) < 2:
         print("Usage: python tts.py <input_text_file> [output_mp3_path] [voice]")
         print()
+        print("Voices: ara, eve, leo, rex, sal")
+        print()
         print("Examples:")
         print("  python tts.py digest.txt")
-        print("  python tts.py digest.txt episodes/2026-04-02.mp3")
-        print("  python tts.py digest.txt episodes/2026-04-02.mp3 en-US-GuyNeural")
-        print()
-        print("Popular voices:")
-        print("  en-GB-RyanNeural    — British male (default)")
-        print("  en-GB-SoniaNeural   — British female")
-        print("  en-US-GuyNeural     — American male")
-        print("  en-US-JennyNeural   — American female")
-        print()
-        print("Full voice list: edge-tts --list-voices")
+        print("  python tts.py digest.txt episodes/2026-04-18.mp3 eve")
         sys.exit(1)
 
     input_file = sys.argv[1]
-    with open(input_file, "r") as f:
+    with open(input_file, "r", encoding="utf-8") as f:
         digest_text = f.read()
 
     if len(sys.argv) >= 3:
@@ -107,5 +101,4 @@ if __name__ == "__main__":
 
     voice = sys.argv[3] if len(sys.argv) >= 4 else DEFAULT_VOICE
 
-    os.makedirs(os.path.dirname(output_file), exist_ok=True)
     synthesize_speech_sync(digest_text, output_file, voice)
