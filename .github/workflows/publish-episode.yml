@@ -3,7 +3,7 @@
 # This workflow:
 # 1. Checks out the repo
 # 2. Reads the podcast script (from latest-digest.txt, workflow input, or repository_dispatch)
-# 3. Runs Edge TTS to generate audio (no API keys needed!)
+# 3. Runs xAI Grok TTS to generate audio
 # 4. Commits the new MP3 and updated feed.xml back to the repo
 #
 # The audio is served via GitHub Pages from the main branch.
@@ -76,6 +76,9 @@ jobs:
           echo "Digest length: $(wc -c < digest.txt) bytes"
 
       - name: Generate episode
+        env:
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
+          XAI_VOICE: eve
         run: python scripts/publish.py digest.txt --local
 
       - name: Commit and push
