@@ -1,15 +1,34 @@
 """
 Text-to-Speech converter using xAI Grok TTS API.
 
-The podcast script is expected to be pre-formatted for speech with
-Grok TTS tags (e.g. [pause 500ms], <emphasis>word</emphasis>, <slow>...</slow>,
-<whisper>...</whisper>, [laugh]).
+The podcast script is pre-processed by `preprocess_for_grok()` below, then
+POSTed to the xAI TTS endpoint. The preprocessor fixes three things we've
+seen Grok mishandle:
+
+  1. `[pause 500ms]` duration-style tokens - spoken aloud literally.
+     Converted to `[pause]` (<500ms) or `[long-pause]` (>=500ms).
+  2. Unsupported wrap tags like `<emphasis>...</emphasis>` - also spoken
+     aloud. Stripped (inner text preserved).
+  3. Optional: inject `[breath]` at blank-line paragraph breaks for
+     more natural pacing (on by default).
+
+Supported Grok TTS tags (verified April 2026 against docs.x.ai):
+  Inline (self-closing):
+    [pause]  [long-pause]  [laugh]  [cry]  [breath]  [sigh]
+    [chuckle]  [giggle]  [smirk]  [throat-clear]  [inhale]  [exhale]
+    [tsk]  [tongue-click]  [lip-smack]  [hum-tune]
+  Wrapping (open/close):
+    <whisper>  <singing>  <sing-song>  <laugh-speak>
+    <soft>  <loud>  <slow>  <fast>
+    <build-intensity>  <decrease-intensity>
+    <higher-pitch>  <lower-pitch>
 
 Voices: ara, eve, leo, rex, sal
-Docs: https://docs.x.ai/developers/model-capabilities/audio/text-to-speech
+Docs:   https://docs.x.ai/developers/model-capabilities/audio/text-to-speech
 """
 
 import os
+import re
 import sys
 from datetime import datetime
 
@@ -19,6 +38,66 @@ import requests
 XAI_TTS_ENDPOINT = "https://api.x.ai/v1/tts"
 DEFAULT_VOICE = os.getenv("XAI_VOICE", "eve")
 DEFAULT_LANGUAGE = "en"
+
+# Wrapping tags Grok TTS actually parses. Everything else is stripped
+# by preprocess_for_grok so the text isn't read out with the tag name.
+_SUPPORTED_WRAP_TAGS = {
+    "whisper", "singing", "sing-song", "laugh-speak",
+    "soft", "loud", "slow", "fast",
+    "build-intensity", "decrease-intensity",
+    "higher-pitch", "lower-pitch",
+}
+
+
+def preprocess_for_grok(text: str, add_paragraph_breaths: bool = True) -> str:
+    """
+    Normalise a digest script so Grok TTS renders tags correctly.
+
+    Args:
+        text: Raw script, possibly with legacy `[pause 500ms]` or
+              `<emphasis>...</emphasis>` syntax.
+        add_paragraph_breaths: If True (default), inject `[breath]` at every
+              blank-line paragraph break. Set False if Eve sounds asthmatic.
+
+    Returns:
+        Cleaned text safe to send to the xAI TTS endpoint.
+    """
+    # 1a. [pause 500ms] -> [pause] or [long-pause]
+    def _norm_ms(match: re.Match) -> str:
+        try:
+            ms = float(match.group(1))
+        except (TypeError, ValueError):
+            return "[pause]"
+        return "[long-pause]" if ms >= 500 else "[pause]"
+
+    text = re.sub(
+        r"\[pause[\s:]*([0-9]*\.?[0-9]+)\s*ms\]",
+        _norm_ms,
+        text,
+        flags=re.IGNORECASE,
+    )
+
+    # 1b. [pause Xs] seconds form -> [pause] or [long-pause]
+    text = re.sub(
+        r"\[pause[\s:]*([0-9]*\.?[0-9]+)\s*s\]",
+        lambda m: "[long-pause]" if float(m.group(1)) >= 0.5 else "[pause]",
+        text,
+        flags=re.IGNORECASE,
+    )
+
+    # 2. Strip wrap tags Grok doesn't recognise (keep the inner text).
+    #    <emphasis>Canva</emphasis> -> Canva
+    def _filter_wrap(match: re.Match) -> str:
+        tag = match.group(1).lower().lstrip("/")
+        return match.group(0) if tag in _SUPPORTED_WRAP_TAGS else ""
+
+    text = re.sub(r"</?([a-zA-Z-]+)>", _filter_wrap, text)
+
+    # 3. Breath on every blank-line paragraph break
+    if add_paragraph_breaths:
+        text = re.sub(r"\n[ \t]*\n", "\n[breath]\n\n", text)
+
+    return text
 
 
 def synthesize_speech_sync(
@@ -48,6 +127,9 @@ def synthesize_speech_sync(
 
     voice = voice or DEFAULT_VOICE
 
+    # Clean the script for Grok's actual tag vocabulary before sending
+    cleaned_text = preprocess_for_grok(text)
+
     response = requests.post(
         XAI_TTS_ENDPOINT,
         headers={
@@ -55,7 +137,7 @@ def synthesize_speech_sync(
             "Content-Type": "application/json",
         },
         json={
-            "text": text,
+            "text": cleaned_text,
             "voice_id": voice,
             "language": DEFAULT_LANGUAGE,
         },
