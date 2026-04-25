@@ -1,37 +1,37 @@
-Good morning! [pause] It's Friday, April twenty-fourth, twenty twenty-six, and there is a lot to talk about today. [pause] Let's get into it.
+Good morning! [pause] Here's your daily AI digest for Saturday, April twenty fifth. [pause] And honestly? What a week to be paying attention.
 
-<build-intensity>Our top story</build-intensity>, OpenAI shipped GPT five point five yesterday, internal codename Spud, and the numbers are genuinely eye-catching. [pause] It nearly doubled Claude four point seven on FrontierMath Tier four, thirty nine point six percent against twenty two point nine, and it rolled out to Plus, Pro, Business, and Enterprise tiers essentially overnight. [pause] Alongside the model, OpenAI expanded Codex with deeper tool integration, ninety plus third-party plugins, persistent memory, scheduled tasks, and the computer use capability baked right in. [breath] If you use ChatGPT for work, expect better long-context follow-through and less hand-holding on multi-step jobs this week. Ethan Mollick called it, one impressive step on the curve. [pause] Not a paradigm shift, but a clear signal that the frontier labs are still compounding gains rather than plateauing.
+Starting with the big one. [long-pause] DeepSeek just dropped V4. <loud>Open weights, MIT license, one point six trillion parameters, and a one million token context window.</loud> The Pro model costs one dollar seventy four per million input tokens, three dollars forty eight per million output. The Flash model? Fourteen cents in, twenty eight cents out. [pause] For comparison, OpenAI launched GPT five point five the day before at five dollars in, thirty dollars out. <soft>So yes, you're reading that right. The cheapest open frontier model is now roughly one twentieth the price of the closed one.</soft>
+
+The technical bit is just as interesting. DeepSeek built V4 to run on Huawei Ascend chips, and they've already said pricing will fall further once the new Ascend supernodes ship later this year. They also rolled out two new attention mechanisms that cut KV cache memory at one million tokens to about ten percent of what V3 needed. [pause] Translation, long context inference is finally cheap enough to actually deploy at scale.
+
+Now, about that GPT five point five launch. OpenAI shipped Spud, that's the codename, across ChatGPT and Codex on Thursday. Better long horizon execution, a one million token context, and benchmark scores that put it back at the top of several leaderboards. <loud>But the real story is Codex.</loud> It now does browser control, Sheets, Slides, Docs, OS wide dictation, and an auto review guardian agent for long autonomous runs. <fast>This isn't a coding tool anymore. It's OpenAI's super app for agentic computer work.</fast> Sam Altman is now openly framing the company as, quote, an AI inference company. [chuckle] Quite the pivot from chatbots.
+
+Meanwhile Anthropic had a rough week. They published a post mortem tracing Claude Code quality complaints to three separate harness bugs, reset usage limits for affected subscribers, and then quietly tried to push Claude Code from the twenty dollar Pro tier up to the hundred to two hundred dollar Max tier. Pricing pages got updated, no announcement, the internet noticed within hours, and Anthropic reverted the change saying it was a small two percent test that shouldn't have hit the public landing page. [pause] <soft>The damage to trust, though. That doesn't revert.</soft>
+
+Quick model round up. Alibaba dropped Qwen three point six twenty seven B, a dense local model that ties Claude Sonnet four point six on the agentic index and runs at twenty five tokens per second on a MacBook Pro. Tencent open sourced Hy3 preview with competitive coding scores. And OpenAI launched ChatGPT Images two point zero, which Simon Willison says, quote, takes the crown from Gemini.
+
+Onto industry and business. [pause] Big Tech spent two hundred twenty six thousand dollars a day lobbying Congress in the first quarter of this year. Eleven companies, twenty million dollars total. Meta led at seven point one million. <loud>Anthropic posted its biggest ever lobbying quarter at one point five six million, up three hundred thirty three percent year over year.</loud> OpenAI hit a record one million dollars, up eighty two percent. And on top of that, AI companies have funneled close to two hundred million dollars into super PACs ahead of the midterms. [pause] So the people drafting the AI rules are also being funded by the people the rules are about. <soft>Just keep that in mind every time you hear a clean policy debate.</soft>
+
+Layoffs. Meta is cutting ten percent of its workforce, about eight thousand people, on May twentieth. Microsoft is offering its first large scale voluntary buyout to roughly eight thousand seven hundred fifty U.S. employees. Both companies are redirecting that payroll into AI capex. Amazon laid off thirty thousand in the past six months. Oracle is also cutting. [pause] At the same time, Tesla just announced a twenty five billion dollar capex year, betting the farm on Optimus humanoids, robotaxis, and custom AI silicon.
+
+Anthropic also published an Economic Index follow up, and the headline is wild. The workers getting the biggest productivity gains from AI are also the ones most worried about losing their jobs to it. Three times more anxious than light users. Engineers leading the pack. Early career workers loudest of all. [pause] <soft>So much for the conventional wisdom.</soft>
+
+Now, the part you came for. Gaming and AI. [pause] Latitude, the AI Dungeon team, just unveiled Voyage. It's an AI native RPG platform with what they're calling a World Engine, multiple AI systems narrating actions, managing gameplay, and crucially remembering character backstories and relationships across sessions. <loud>NPCs that actually remember you betrayed them.</loud> Worth poking at if you want to see where AI native game design is actually heading.
+
+Speaking of NPCs, GDC 2026 was full of demos. Ubisoft showed personality driven NPCs holding real time conversations. Tencent showed procedural content reaching finished 3D assets. [pause] But the GDC developer survey landed a sobering counter weight. Fifty two percent of devs now view generative AI negatively, up from thirty percent just a year ago. Voice actors, concept artists, and narrative designers leading the concern.
+
+On the streaming side, Twitch previewed its 2026 platform updates, AI moderation, dual format streaming, two K video, watch streak rewards, and clip leaderboards. The AI chatbot generation that remembers viewer history and reads chat sentiment is already credited with up to thirty percent retention lift on the channels using them. [pause] Disclosure rules for AI mediated chat are tightening too, so heads up if you're building anything for your community.
+
+Quick hits before we wrap. [pause] A new Chrome plugin called Sinceerly deliberately injects minor typos into AI written emails so they read as human written. <laugh-speak>Yes, really.</laugh-speak> The fact that this exists as a category is, on its own, the story.
+
+Norway is moving to ban social media for under sixteens, with platforms required to verify ages.
+
+Google DeepMind released Vision Banana, a unified vision model that treats 2D and 3D vision tasks as image generation, reportedly outperforming specialist systems across the board.
+
+And one to file away, Google is reportedly weighing up to a forty billion dollar investment into Anthropic. <soft>Nothing official yet, but worth watching.</soft>
+
+One thing to try today. [pause] Spin up a free trial of an AI powered Twitch moderation tool, something like Frosty Tools or Questie AI, and run it alongside one of your KrispyPidgeon streams this weekend. Watch what it catches that human mods miss, and where it overreaches. With Twitch's own AI moderation rolling out across the platform this year, getting hands on now means you'll already have an opinion when the first party tools land. And if it works, that workflow becomes a reusable asset across the Krispy stream and the day job both.
 
 [long-pause]
 
-In LLM and coding tool news, Alibaba released Qwen three point six, twenty seven B, on Tuesday, under Apache two point zero, with a two hundred sixty two K context window and a seventy seven point two score on SWE bench Verified. [pause] It is one of the strongest open-weight coding models shipped this year, and it actually sits comfortably on consumer hardware once you quantize it. [pause] Worth a look if you're experimenting with local model tooling.
-
-Over at OpenAI, ChatGPT Images two point zero dropped on Monday with native reasoning for image generation and two K resolution output. It topped the Image Arena leaderboard by two hundred forty two Elo points, which is a meaningful jump over the previous top spot. [chuckle] If your feed has been looking suspiciously polished this week, that is probably why.
-
-And a less cheerful one, Anthropic confirmed a security incident tied to Claude Opus four point seven's Mythos Discord community. [pause] User emails and some conversation metadata were exposed through a misconfigured integration. [breath] No model weights or prompts were leaked. Still, a fair reminder to audit any Discord bots and integrations you run against your own community. If you manage a server, now is a good time to review permissions and scopes on third-party apps.
-
-[long-pause]
-
-On the business side, Cursor signed a reported ten billion dollar contract with xAI, with a sixty billion dollar acquisition right attached. [pause] If that right gets exercised, it folds one of the most popular AI coding editors into xAI's stack, which puts real pressure on GitHub Copilot and Cognition's Devin. [pause] OpenAI meanwhile is pushing Codex toward what insiders are calling a superapp positioning, one interface for coding, scheduling, computer use, and third-party plugins. The strategy looks designed to keep developer workflows inside ChatGPT rather than letting them drift to Cursor, Claude, or Gemini.
-
-[long-pause]
-
-<build-intensity>Now the gaming news</build-intensity>, and this one hits close to home. [pause] Stormgate's multiplayer servers are shutting down, because Hathora, the backend provider, was acquired by Fireworks AI and is sunsetting its game hosting product. [pause] That is a clean example of AI infrastructure consolidation eating a niche that game hosts used to own. Worth watching as a signal for the broader server hosting market, because where Hathora went, other niche providers could follow.
-
-At GDC this week, Ubisoft showed Teammates, AI driven NPC squadmates that respond to voice commands and adapt to player tactics. [pause] It's an impressive demo, though the usual questions about latency, cost, and whether any of it actually ships in a real game still apply. [chuckle] File this one under, promising, but let's see the patch notes.
-
-Latitude launched Voyage, a platform for AI native RPG experiences aimed at creators rather than players. [pause] Think of it as a stream friendly sandbox for running one-off interactive sessions with chat. Could be fun content if you're looking for a low prep stream idea.
-
-And the GDC twenty twenty six developer survey landed with a sharp headline, fifty two percent of devs now view generative AI negatively, up from thirty percent the previous year. [pause] Sentiment is hardening even as the tooling gets better, largely driven by job displacement concerns and quality issues in shipped AI content. [sigh] That is a story worth tracking, because it will shape hiring, production pipelines, and how publishers talk about AI in their games.
-
-[long-pause]
-
-<higher-pitch>Quick hits.</higher-pitch> [pause] Latent Space published a strong Agent Labs Thesis podcast episode on why small focused agent labs are outperforming big platform plays. Recommended listen for the commute. Sony demoed a table tennis robot that uses real-time vision and motion planning to rally with humans, more a research flex than a product, but a fun watch. And Ethan Mollick argued that the frontier is still compounding, useful framing for anyone tempted to believe the AI slowdown narrative.
-
-[long-pause]
-
-<build-intensity>One thing to try today.</build-intensity> [pause] Add an AI co-host to your next Twitch stream. Tools like FrostyTools, ai licia, and StreamChat AI can read chat, respond in a configurable voice, and pick up on hype moments you might miss while you're locked in on the game. [pause] For a Community and Content Manager who also streams, this is a low-lift way to test whether AI assisted chat engagement actually lifts retention and follows, and it gives you real data you can bring back to your team. [pause] Start small, a thirty minute stream, one configured persona, a single clear rule, only speak when chat is quiet, or only when hype is spiking, so you can measure the effect cleanly.
-
-[long-pause]
-
-<slow>That's your digest for Friday. Have a good one.</slow>
+<slow>That's your digest for Saturday. Have a good one.</slow>
