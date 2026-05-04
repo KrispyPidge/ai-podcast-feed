@@ -1,37 +1,45 @@
-Good morning! [pause] Here’s your daily AI digest for Sunday, May third. [pause] Big day for open-weights models, a tense week in Washington, and some moves at the intersection of AI and gaming worth paying attention to. Let’s get into it.
+Good morning! [pause] Here's your daily AI digest for Monday, May fourth. [pause]
 
-[long-pause] Starting with the top story. <build-intensity>DeepSeek just dropped V4.</build-intensity> Two preview models, V4-Pro and V4-Flash, and V4-Pro is now the largest open-weights model on the planet. <loud>One point six trillion total parameters,</loud> with forty-nine billion active at any time. Both ship with M.I.T. licenses, a one million token context window, and a Mixture of Experts architecture. <soft>And the prices? Almost laughably low.</soft> V4-Flash is fourteen cents per million input tokens. Pro is one dollar seventy-four. [chuckle] When the closed labs price Opus at fifteen dollars per million, that is a real shot across the bow.
+Starting with the big one. [long-pause] <loud>The Pentagon just locked Anthropic out of its biggest AI contract round of the year.</loud>
 
-Onto LLMs and coding tools. Anthropic launched the public beta of Claude Security. It uses Opus four point seven to scan your codebase for vulnerabilities and actually generate patches. Cursor responded the same week with Security Review, which deploys autonomous agents to run scheduled scans and post results to Slack. <soft>Honestly, this is where the agent story gets interesting for anyone running infrastructure. Scans that run themselves while you sleep.</soft>
+Seven providers got cleared for AI on classified networks on May first. OpenAI, Google, Microsoft, AWS, Nvidia, SpaceX, and a startup called Reflection AI. Anthropic, makers of Claude, were the only frontier lab cut out. [pause]
 
-ByteByteGo published a clean explainer on M.C.P. versus Skills this morning. Worth your time. M.C.P. is a client-server protocol that lets an agent talk to live systems and data through one interface. Skills are folders, with a SKILL dot M.D. file the agent loads on trigger. M.C.P. for connecting to things. Skills for packaging know-how. They’re complementary, not competing.
+The reason? Anthropic insisted on safety guardrails for how the government uses AI in warfare. <soft>Which, you know, seems pretty reasonable.</soft> The administration disagreed. So they're out, for now. The White House has reopened talks since the company shipped a few more breakthroughs.
 
-[breath]
+But here's the twist. While that door was closing, Google opened a much bigger one. <build-intensity>Google is investing up to forty billion dollars in Anthropic.</build-intensity> Plus, a new compute partnership with Google and Broadcom locks in five gigawatts of capacity. Anthropic's run rate has gone from nine billion at the end of last year to over thirty billion right now. [chuckle] So they lost a deal, and gained, well, an empire. [pause]
 
-Industry and business. The White House is in an awkward dance with Anthropic. After months of escalating its fight, it’s now pushing back on Anthropic’s plan to expand Mythos access from fifty firms to about a hundred and twenty, citing compute strain. But a new national security memo will reportedly push multi-vendor A.I. adoption for federal agencies, and address some of Anthropic’s worries. <soft>Internal division clearly remains, with the Secretary of War still calling Anthropic, quote, run by an ideological lunatic.</soft> [pause] David Sacks says all frontier models will reach Mythos-level cyber capabilities within six months.
+Moving on to LLMs and coding tools. [pause]
 
-OpenAI announced it has already surpassed its 2029 Stargate goal of securing ten gigawatts of compute. <loud>They added three gigawatts in the last three months alone.</loud>
+DeepSeek V four dropped two weeks ago and the after shocks are still rolling in. The Pro model is one point six trillion total parameters, forty nine billion active. The Flash version is two hundred and eighty four billion. Both ship with one million tokens of context, both released as open weights under M I T license, and they cost roughly ten to thirteen times less per token than GPT five point five or Opus four point seven. [pause]
 
-Meta posted its fastest revenue growth since 2021 in Q1, and simultaneously lost about twenty million daily users across Facebook, Instagram, WhatsApp, and Messenger. Meta blames the Iran war’s internet disruptions and a WhatsApp ban in Russia, not organic churn. The eye-popping figure is the 2026 A.I. infrastructure spend, now guided as high as one hundred and forty-five billion dollars.
+The bigger story Simon Willison flagged on Friday: <slow>this release effectively ends the OpenAI Microsoft AGI clause.</slow> For seven years, the partnership had this strange line saying that, if AGI was achieved, Microsoft's commercial rights would void. Open weight models hitting frontier capability independent of OpenAI made that trigger meaningless. By Wednesday, both companies had quietly rewritten the deal. OpenAI can now ship products on any cloud. <soft>A genuinely huge shift, buried under the noise of model releases.</soft> [pause]
 
-<soft>And on that infrastructure note,</soft> drone strikes during the Iran war have damaged data centers across the Gulf. A.W.S. sites in the U.A.E. and Bahrain, an Oracle site in Dubai, and Pure D.C.’s Abu Dhabi facility, all hit. Pure D.C. has frozen new Middle East projects. The region was set to triple its A.I. capacity by 2030. Missile risk is now part of the math.
+A few quick wins from the rest of the week. Mistral three landed with a one hundred twenty eight billion flagship, async cloud coding, and an agentic Work mode in Le Chat. Kimi K two point six from Zhipu AI quietly beat Claude, GPT five point five, and Gemini in a coding challenge. IBM dropped Granite four point one, an eight billion parameter model performing like a thirty two billion mixture of experts. And GitHub Copilot CLI shipped version one point zero point forty, with both Claude and OpenAI Codex now available as coding agents for Business and Pro users. [pause]
 
-[breath]
+On to industry and business. [pause]
 
-Gaming and A.I., the angle that always matters here. <build-intensity>GDC 2026 painted a tense picture.</build-intensity> NVIDIA’s ACE platform is now running on-device for NPCs that hold real conversations and remember player history. Resemble dot ai’s Chatterbox lets you clone any voice from a short audio sample. Tencent’s HY 3D Engine spits out production-quality 3D assets from text or sketches in minutes. <fast>It’s all moving fast.</fast> [pause] But here’s the headline that matters for community managers. <loud>Fifty-two percent of game developers now view generative A.I. negatively, up from thirty percent just last year.</loud> Eighty-five percent of gamers hold negative attitudes toward A.I. in games. <soft>That’s the room you’re posting into. Worth remembering when you draft the next Discord announcement.</soft>
+Stanford's AI Index for twenty twenty six is out. The wildest gains aren't in chatbots, they're in agentic AI. OSWorld for autonomous computer use, and SWE Bench for autonomous coding, are climbing fast. Top models like Claude Opus four point six and Gemini three point one Pro are now clearing fifty percent on the hardest benchmarks for the first time. [pause] <soft>Specialized LLMs are also gaining ground over general chatbots, especially in finance, legal, and healthcare.</soft> [pause]
 
-Spotify rolled out Verified by Spotify badges for human artists, and tightened rules to block A.I.-generated profiles from verification while downranking low-quality A.I. music. <soft>Watch this space. Game asset stores and other content platforms are likely next.</soft>
+Now to the fun part. Gaming and AI. [pause]
 
-[breath]
+GDC twenty twenty six made one thing very clear. AI is now infrastructure, not a curiosity. Real time asset generation, voice synthesis, procedural animation, all foundational across studios. Ubisoft showed off an eighty person prototype where you talk to NPCs by voice, and the characters can <higher-pitch>turn down a quest because it doesn't fit their personality.</higher-pitch> [chuckle] [pause]
 
-Quick hits. [pause] Mira launched six hundred and forty-nine dollar camera-less A.I. glasses that listen all day, translate sixty plus languages in real time, and act as a second brain via a paired ring controller. They claim recordings are deleted, only transcripts saved.
+But! [pause] <loud>Fifty two percent of game developers now view generative AI negatively.</loud> Up from thirty percent a year ago. Compute cost, unpredictable outputs, and player data concerns are slowing real deployment. The hype is bumping into reality. [pause]
 
-Google rolled out Gemini for cars with Google Built-In, swapping out Assistant for a more conversational system. G.M. is bringing it to about four million of its vehicles, model year 2022 onward.
+Tencent Cloud's H Y three D engine turns text or sketches into production grade three D assets in minutes. <fast>Indie pipelines compressed from weeks to an afternoon.</fast> [pause]
 
-[chuckle] And in the strangest research write-up of the week, OpenAI traced ChatGPT’s habit of mentioning goblins, gremlins, and other fantasy creatures back to a single reward signal in its retired Nerdy personality. <soft>Goblin mentions jumped a hundred and seventy-five percent after the five point one launch.</soft> [chuckle] GPT-5.5 ships with a Codex prompt that explicitly bans goblins, gremlins, ogres, trolls, raccoons, <higher-pitch>and pigeons.</higher-pitch> [laugh] Hard not to take that one personally.
+And on the local model front, the AINews Reddit recap had a fun one. Qwen three point six twenty seven billion parameters versus Gemma four thirty one billion. The challenge? Make Pacman in HTML using only built in knowledge. Qwen pulled it off cleanly. Gemma's ghost movement logic broke. April twenty twenty six is being called one of the best months ever for local model releases. [pause]
 
-[breath]
+For community managers, here's a practical one. Discord AI moderation has finally crossed the context line. Tools like VibeBot understand intent, not just keywords. A bot now knows that, nice kill, in a gaming server isn't a threat. <soft>The era of pure keyword filters is finally ending.</soft> [pause]
 
-One thing to try today. [pause] Spend thirty minutes reading the ByteByteGo M.C.P. versus Skills breakdown, then sit down and pick ONE community task you do every week that could become a Skill. Your stream prep, your Discord weekly recap, your YouTube tag template. Skills run inside the agent’s own environment with no extra infrastructure. They’re the lowest-friction way to package the way you do a thing, so the agent does it the same way every time. <soft>It’s a small, concrete way to turn A.I. from a chat partner into a teammate that already knows your workflows.</soft>
+Quick hits for you. [pause]
 
-[long-pause] <slow>That’s your digest for Sunday. Have a good one.</slow>
+ByteByteGo published a clean explainer on MCP versus Skills. Both extend what an agent can do, but they solve different problems. MCP is the client server protocol for connecting agents to live external systems. Skills are folders an agent reads to learn reusable instructions. Use MCP for live data, Skills for know how. <soft>Worth a read if you're tinkering with your own tools.</soft> [pause]
+
+The AI Engineer World's Fair just announced Wave Two tracks for this summer at Moscone West. Autoresearch, Memory, World Models, Tokenmaxxing, Agentic Commerce, and Vertical AI across law, healthcare, go to market, and finance. [pause]
+
+And Snapdragon launched a Game AI SDK at GDC, putting AI NPC inference on player hardware. Lower latency, lower cost. The infrastructure for ambient AI in games is being laid right now. [pause]
+
+One thing to try today. [pause] <build-intensity>Swap a cheap model into one of your drafting workflows.</build-intensity> DeepSeek V four Pro is ten to thirteen times cheaper per token than the top models, and it's frontier comparable on most everyday tasks. For community work, like first pass replies, stream description drafts, social copy variants, that's a no brainer cost cut. Try wiring it in via OpenRouter or Together AI for one workflow today. <soft>You'll learn more about model trade offs in thirty minutes than any benchmark write up will teach you.</soft> [pause]
+
+<slow>That's your digest for Monday. Have a good one.</slow>
