@@ -1,33 +1,101 @@
-Good morning! [pause] Here’s your daily AI digest for Wednesday, May sixth. [pause]
+Good morning! [pause] Here’s your daily AI digest for Thursday, May seventh. [pause] Let’s dive in.
 
-Starting with the big one. [long-pause] A theoretical physicist named Alex Lupsasca, who won the 2024 Breakthrough Prize, sat down with Latent Space for a ninety-two-minute interview, and his story is wild.
 
-When GPT five came out, the public reception was lukewarm. People kept saying, well, it’s not that much better at writing email. [chuckle] <soft>Lupsasca’s response was, well, GPT three could write email. That’s not the point.</soft> The point, he says, is what’s happening at the frontier. [pause]
 
-He asked GPT five point x to reproduce his hardest paper, the one that took him a year and a half. [pause] It did it. <loud>In eleven minutes.</loud>
+[long-pause] Starting with the big one. Silicon Valley is getting serious about services. Both Anthropic and OpenAI just spun up dedicated services companies, and the scale is wild.
 
-Then he and his old advisor at Harvard, Andrew Strominger, took a problem they’d been stuck on for over a year, something called single-minus gluon tree amplitudes. Don’t worry about what it means. The point is, the model solved it. [pause] <soft>Before Strominger’s plane even landed in San Francisco.</soft> And it found a cleaner intuitive limit the humans had missed. [pause]
 
-So they got greedy. They aimed the same setup at gravitons, the theoretical particle for quantum gravity. They wrote one prompt, hit go, and walked away. [long-pause] One day later, the model had produced one hundred and ten pages of novel calculations, with techniques the humans hadn’t been planning to use. Three weeks of human verification later, it’s a publishable physics paper.
 
-<build-intensity>This is not vibe coding. This is vibe physics. The frontier of human knowledge moved this week.</build-intensity> [pause] Worth sitting with for a minute. [pause]
+Anthropic’s joint venture with Blackstone, Hellman and Friedman, and Goldman Sachs is funded with <loud>one and a half billion dollars</loud>, about three hundred million from each main partner. OpenAI’s offering, called The Deployment Company, has nineteen investors including TPG, Brookfield, Advent, and Bain Capital. They’ve reportedly raised about <loud>four billion dollars</loud> at a ten billion dollar premoney valuation.
 
-Moving to L L Ms and coding tools.
 
-Anthropic co-founder Jack Clark dropped a blog post putting sixty-percent-plus odds on AI training its own successors before twenty twenty-nine. He cited M E T R data showing agentic AI’s independent work capability went from thirty-second tasks in twenty twenty-two, to twelve-hour runs today, with one-hundred-hour runs projected by year’s end. <soft>Self-improving AI, basically by the end of twenty twenty-eight. That is, somehow, not far away anymore.</soft> [pause]
 
-On the practical side, Cursor three is live, with a dedicated Agents Window, a real architectural shift from “editor with AI” to a workstation for running a fleet of agents. Claude Code is reportedly behind about four percent of all public GitHub commits, and topped a February developer survey at forty-six percent most-loved. <fast>Most teams mix and match: Cursor as the daily editor, Claude Code for architectural work, Codex for review.</fast>
+<soft>Here’s why this matters.</soft> Aaron Levie summed it up well. Agents entering knowledge work means very real work to upgrade IT systems, get agents the context they need, modernize workflows, and drive adoption. The labs aren’t satisfied just shipping APIs anymore. They want to own the implementation layer too. For anyone managing communities or content workflows, expect a lot more vertical, workflow-packaged AI products landing in your inbox.
 
-Industry and business. [pause] Anthropic and OpenAI both spun up private-equity-backed services arms on the exact same day, which is a moment worth noticing. Anthropic announced a one-point-five-billion-dollar Claude services company, with Blackstone, Hellman and Friedman, and Goldman Sachs, focused on mid-market companies. OpenAI’s “Deployment Company” is raising four billion dollars from nineteen investors at a ten-billion-dollar valuation. <soft>The thesis from both, the bottleneck isn’t the models anymore. It’s actually getting them installed into messy real-world businesses.</soft> The frontier labs are becoming AI-native consulting firms with private equity pipelines feeding them. [pause]
 
-In other money news, Anthropic also locked in a reported two-hundred-billion-dollar commitment to Google Cloud over five years. [pause] And Peter Thiel led a one-hundred-and-forty-million-dollar round for Panthalassa, an Oregon startup building autonomous floating compute pods. [chuckle] <soft>Eighty-five-meter steel nodes that bob in the open ocean, run on wave energy, cool with seawater, steer themselves with no engines, and beam results back over Starlink.</soft> First pilot in the Pacific in twenty twenty-seven. The bet is that public hostility to land-based data centers is now a hard ceiling.
 
-Gaming and AI. [pause] This is a complicated week here. At G D C twenty twenty-six, fifty-two percent of game developers now view generative AI negatively. That’s up from thirty percent the year before. The standout demo of the show was Ubisoft’s R and D experiment Teammates, three voice-controlled AI N P Cs with their own personalities and contextual intent. <soft>It looked impressive. The room was openly split on whether that’s an upgrade or a liability for game design.</soft> Worth tracking from a community-management angle, because the sentiment gap between dev rooms and player feedback channels is going to keep widening.
+Onto LLMs and coding tools.
 
-Adjacent but worth flagging, GameStop made an unsolicited fifty-six-billion-dollar bid for eBay. C E O Ryan Cohen’s pitch is, quote, a legit competitor to Amazon, built on collectibles, used goods, and live shopping. [chuckle] <soft>The market is not buying it yet. eBay closed below the offer, GameStop dropped ten percent.</soft>
 
-Quick hits. [pause] <fast>Sierra raised nine-hundred-and-fifty million dollars at a fifteen-billion-dollar valuation, claiming forty percent of the Fortune fifty as customers. Apple is taking its App Store fight with Epic to the U S Supreme Court, which could shake up game-platform economics if it lands. And AI-powered fire detection cameras across Arizona, California, and Colorado are giving fire crews an average forty-five-minute lead time over the first nine-one-one call.</fast>
 
-One thing to try today. [pause] Replace Siri with a free local model on your iPhone. Download an app called Locally AI, pick Google’s open-source Gemma model, and map its voice mode to the Action Button via Settings, Action Button, Shortcut. <soft>None of your prompts leave the phone, which is handy for asking dumb questions about random games during stream prep, with no cloud round-trip.</soft> [pause]
+GPT 5.5 Instant rolled out as ChatGPT’s new default this week. Stronger personalization tied to memories, past chats, files, and connected Gmail. And here’s the cool bit, OpenAI now exposes memory sources, so users can see exactly what context shaped a response. [chuckle] Finally, you can find out why ChatGPT remembers something weird about you.
 
-<slow>That’s your digest for Wednesday. Have a good one.</slow>
+
+
+Anthropic shipped <loud>ten</loud> ready-to-run AI agents aimed at financial services. Pitchbook generation, KYC screening, earnings reviews, valuations. They’ve integrated with FactSet, S and P Global, Morningstar, and a handful of others. Claude is also getting a Microsoft three sixty five add-in. Anthropic’s strategy is clearly domain-by-domain. Development, cybersecurity, design, now finance.
+
+
+
+Google released Gemma 4 multi-token-prediction drafters, with claims of up to <loud>three times faster</loud> decoding at no quality loss. Day-zero support across Transformers, vLLM, MLX, SGLang, Ollama, and AI Edge. <fast>llama.cpp’s beta MTP support also landed this week, with reports of more than two times the token-generation throughput on Qwen 3.6 27B.</fast> If you mess with local models, this is a meaningful free speedup.
+
+
+
+On the coding-agent front, Cursor launched agents that monitor GitHub and auto-fix CI failures. Cognition launched Devin for Security, claiming Devin Review caught a malicious axios release before public disclosure. And Meta researchers introduced ProgramBench, a hard new benchmark asking models to generate full software, like SQLite or FFmpeg, from spec, no starter code, no internet. Top accuracy? <loud>Zero percent.</loud> [chuckle] So whole-repo from scratch is still nowhere near solved, even as targeted coding agents quietly get really, really good.
+
+
+
+Industry and business.
+
+
+
+OpenAI is reportedly fast-tracking its first AI agent phone for mass production in early 2027. That’s a full year earlier than previously reported, per supply-chain analyst Ming-Chi Kuo. The standout spec is an enhanced image signal processor designed to feed real-world visual context to AI agents. MediaTek is tipped as the sole chip supplier. <build-intensity>Combined 2027 and 2028 shipments could touch thirty million units.</build-intensity> The open question is how this fits with whatever OpenAI is building with Jony Ive’s io.
+
+
+
+Anthropic has reportedly committed to spending <loud>two hundred billion dollars</loud> on Google’s cloud and chips over the next five years. <soft>That makes Anthropic over forty percent of Google’s revenue backlog.</soft> The deal covers multiple gigawatts of TPU compute coming online from 2027. And Anthropic’s run-rate revenue has reportedly surpassed thirty billion dollars, up from roughly nine billion at the end of 2025.
+
+
+
+The US government also expanded its pre-launch AI testing program. Google DeepMind, Microsoft, and xAI signed agreements with the Center for AI Standards and Innovation, joining OpenAI and Anthropic. Meanwhile the Pentagon struck deals with eight Big Tech companies, after notably shunning Anthropic in this round.
+
+
+
+And in a sign of the times, Coinbase CEO Brian Armstrong announced fourteen percent layoffs, around seven hundred people. He’s pitching the cuts as a shift to AI-native teams and agent-driven workflows. <soft>It’s the most prominent rewrite-headcount-around-agents framing we’ve seen yet.</soft>
+
+
+
+Now for our gaming and AI segment.
+
+
+
+GameStop just launched a <loud>fifty-six billion dollar</loud> unsolicited bid for eBay. CEO Ryan Cohen is pitching the combined company as a, quote, legit competitor to Amazon, end quote, for collectibles, used goods, and live shopping. The market is sceptical. eBay shares only climbed to one hundred and nine dollars against a one hundred and twenty-five dollar offer, and GameStop stock dropped ten percent. [chuckle] Whatever happens, the gaming-retail meme stock is taking a giant swing at the secondhand marketplace category, just as AI-driven product discovery and live-shopping overlays start to mature.
+
+
+
+A quieter but bigger story for the long term, 2026 is the year long-term memory NPCs go mainstream. Vector databases plus LLM-driven dialogue mean NPCs can now remember a player’s past actions, tone, even moral alignment, across sessions. <build-intensity>Industry data suggests around seventy-eight percent of AAA studios already use AI tools in production.</build-intensity> Unity’s upgraded Unity AI beta is moving toward natural-language prompting of full casual games, and Unity Sentis lets devs run LLM-style models locally for low-cost dynamic NPCs. Unreal is leaning into MCP server integration for agentic editor pipelines.
+
+
+
+OpenAI also shipped Astrocade this week, a platform for creating shareable AI-generated games. It’s a casual, social, prompt-to-play experience, and the kind of product that will inevitably show up in streaming clips fast.
+
+
+
+And on the streaming side, Twitch’s 2026 update slate is rolling out. Dual-format streaming, two K support, AI-powered moderation tools, the new Combos Bits-driven group reaction feature, and a wave of context-aware AI chatbots that recall past viewer interactions and respond to emotional cues. Channels using these AI chatbots are reporting up to <loud>thirty percent higher viewer retention</loud> and ten to twenty percent subscription growth. <soft>Worth a look as you balance community, content, and monetization.</soft>
+
+
+
+Quick hits.
+
+
+
+Span and Nvidia announced XFRA, mini AI data centers that mount on the exterior walls of homes, using liquid-cooled RTX PRO 6000 Blackwell GPUs and tapping unused local-grid capacity. Span claims eight thousand units can install six times faster, at one fifth the cost, of a comparable hundred-megawatt centralized facility. They’re piloting with PulteGroup. <soft>Expect plenty of not-in-my-backyard energy.</soft>
+
+
+
+Apple agreed to pay roughly two hundred and fifty million dollars to settle a US class action over misleading claims about its new AI Siri, while admitting no wrongdoing.
+
+
+
+And Perplexity launched Perplexity Computer for Professional Finance, with licensed data and thirty-five dedicated workflows, plus expanded premium access to NEJM, BMJ, and other medical journals. Vertical, workflow-packaged AI products are clearly the new frontier.
+
+
+
+One thing to try today.
+
+
+
+The Rundown’s walkthrough on making Notion agents more autonomous is a great fit for a community and content role. Here’s the gist. Create a Notion agent, point it at a database, build a template that uses the at-Today tag so duplicates inherit the current date, put your task instructions in the page body, mention the agent inside the template, then duplicate that template on a recurring cadence. [pause] Set one up for a daily content debrief, something like, summarize yesterday’s Discord activity, top posts, and stream highlights, then list three suggested posts for today. <soft>You’ve effectively built yourself a free morning standup.</soft> It’s low effort, high leverage, and the same pattern transfers cleanly to weekly community reports or stream-prep checklists later.
+
+
+
+<slow>That’s your digest for Thursday. Have a good one.</slow>
