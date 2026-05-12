@@ -1,47 +1,65 @@
-Good morning! [pause] Here's your daily AI digest for Monday, May eleventh. [pause] Big news to start.
+Good morning! [pause] Here’s your daily AI digest for Tuesday, May twelfth. [pause]
 
-[long-pause] <loud>Anthropic just officially overtook OpenAI in revenue.</loud> After their miracle Q1 of eighty times annualized growth, and a one-month jump of fifteen billion dollars in ARR, the company is now valued somewhere between one trillion and one point two trillion dollars. That puts them inside the top fifteen most valuable companies in the world.
 
-And here's the wild contrast. While Anthropic is growing ten times year on year, big incumbents are doing the opposite. Block laid off forty percent of its workforce. Cloudflare, twenty percent. Coinbase, fourteen percent. All citing, quote, AI readiness. <soft>Whether that's real or a convenient excuse is anyone's guess.</soft> But the pattern's clear. Strong AI-native companies like Linear are growing because of AI. A lot of incumbents are shrinking around it. [pause]
 
-Meanwhile, Anthropic CEO Dario Amodei was at the White House this week meeting senior Trump administration officials. The topic? Mythos. That's Anthropic's flagship cybersecurity model, and access is being restricted to a small set of approved organizations, after sparking concerns from governments, banks, and utilities. The model is, by all accounts, very good at offensive cyber. Which is exactly why the gatekeeping.
+Let’s start with the big one. [long-pause] <loud>Thinking Machines just dropped Interaction Models.</loud> Mira Murati’s team, finally, after months of silence, gave us a real preview. The model is called TML Interaction Small, two hundred seventy six billion parameters, twelve billion active. And it is not just another chatbot. [breath]
 
-On to LLMs and coding tools.
 
-OpenAI had a big week for voice. They shipped three new realtime models. GPT-Realtime-2, GPT-Realtime-Translate, and GPT-Realtime-Whisper. The headline is that Realtime-2 now has GPT-5.5-level reasoning, can use multiple tools at once, and crucially, <higher-pitch>can talk while it thinks.</higher-pitch> On the Big Bench Audio benchmark it hit ninety-six point six percent, up from eighty-one percent for the previous model. Zillow, Priceline, and Deutsche Telekom are already building on it. [pause] The awkward turn-based era of voice AI? Quietly ending.
 
-OpenAI also kept rolling on the GPT-5.5 family. GPT-5.5 Pro, Instant, gpt-image-2, and a new model called GPT-5.5 Cyber, available in limited preview just for defenders of critical infrastructure. And Codex got a new flow called slash-goal, which basically turns it from a coding assistant into a long-running agent runtime. Independent testers ran Codex Goals on the public ARC-AGI-3 games for one hundred and sixty hours and it solved sixty-one percent of them. [pause] That's a lot of unsupervised problem solving.
+[chuckle] Built from scratch for real time interaction, not turn based chat. Turn taking latency of zero point four zero seconds. That’s faster than Gemini three point one flash live, and almost three times faster than GPT realtime two. <build-intensity>It is the first general video and speech model that is visually proactive.</build-intensity> Imagine asking your AI to count your pushups, remind you to breathe every four seconds, or tell you the word in your other language every time you codeswitch. The famous, kind of dead, ChatGPT her demo, this just made it look like a tech demo from twenty twenty four. [pause] For anyone in streaming or content, this is the foundation of AI co hosts that can react to chat, respond to gameplay, and not awkwardly pause for two seconds while they think. <soft>Quietly, this might be the most important release of the week.</soft>
 
-Now, here's a fun one. <slow>Simon Willison wrote a thoughtful essay this week</slow> about how vibe coding and what he calls agentic engineering are converging faster than he'd like. His point. As the coding agents get more reliable, even careful engineers stop reviewing every line of code they produce. You end up trusting the agent's track record the way you'd trust another internal team's library. [chuckle] He admits it's risky. And he admits he's doing it anyway. Worth a read if you're trying to understand where AI coding is actually headed.
 
-And then there was the Firefox security write-up. <loud>Mozilla used Claude Mythos Preview to patch four hundred and twenty-three security bugs in April alone.</loud> Their previous baseline through twenty twenty-five? Twenty to thirty per month. So that's roughly an order of magnitude jump. AI security bug reports went from being mostly unwanted slop to genuinely useful in a matter of months. [pause]
 
-On to industry and business.
+Now, LLMs and coding tools. [pause]
 
-The Anthropic and xAI Colossus 1 deal officially landed. Roughly five billion dollars a year for three hundred megawatts of compute. xAI keeps Colossus 2 for its own training. <soft>Elon Musk made a rather unusual public note that he reserves the right to, quote, reclaim the compute if Anthropic's AI engages in actions that harm humanity.</soft> Which is a fairly novel form of supply chain risk, when you think about it.
 
-Separately, Anthropic has committed over two hundred billion dollars in cloud infrastructure and chips, largely with Google Cloud. The US Center for AI Standards and Innovation also signed new agreements with Google DeepMind, Microsoft, and xAI giving the government early access to evaluate frontier models before they're released publicly. Anthropic and OpenAI already had similar deals in place.
 
-Scale AI landed a five hundred million dollar Pentagon contract. That's five times the size of their deal from last September. OpenAI completed its seventh acquisition of twenty twenty-six with a company called Hiro. Cohere is merging with Germany's Aleph Alpha. And in a fun one for content creators, Spotify launched Personal Podcasts. <higher-pitch>Agent-generated podcasts inside your library, made from briefings or class notes.</higher-pitch> [pause] Look out, podcasters. Or, more accurately, lean in.
+<loud>OpenAI launched the Deployment Company.</loud> A majority owned services arm built by acquiring a firm called Tomoro, bringing in one hundred fifty forward deployed engineers, with four billion dollars of initial investment from nineteen partners. The read is clear, OpenAI wants to own the deployment layer of the AI economy, Palantir style. They also launched Daybreak, a defensive cyber operations product combining GPT five point five, Codex, and a specialized model called GPT five point five Cyber. [breath]
 
-Now, gaming and AI.
 
-GDC twenty twenty-six happened recently, and the developer survey was striking. <loud>Fifty-two percent of game developers now view generative AI negatively.</loud> Up from thirty percent just one year ago. The split in the industry is very real. But the announcements still landed.
 
-Ubisoft demoed an R and D project called Teammates. Three AI NPCs that respond to natural voice commands, each with their own personality, and crucially, they understand contextual intent. So you don't have to use exact wording. You can just say what you mean. NVIDIA also shipped their first production-grade text-to-speech model running fully on-device through their ACE platform, which actually matters a lot for latency in multiplayer and streaming contexts. Snapdragon launched a new Game AI SDK for on-device inference. And Latitude unveiled Voyage, an AI-driven RPG platform combining their proprietary models with Google's Gemini Flash and Gemma. [pause]
+Artificial Analysis dropped a Coding Agent Index. Opus four point seven inside Cursor CLI took the top spot at sixty one. GPT five point five inside Codex and Claude Code right behind. The most interesting finding, the cost per task varied by more than thirty times across model and harness combos. The harness matters as much as the model now. <fast>Quick adjacent hits, Cursor launched inside Microsoft Teams, reading full thread context to open pull requests. Hugging Face added Hermes Agent computer use targeting local and open models.</fast>
 
-On the streaming side, Twitch previewed its twenty twenty-six roadmap. AI moderation upgrades, dual streaming, and monetization tools. AutoMod is getting extended, and they're previewing audio agents that can verbally welcome viewers and read raid messages out loud. Worth keeping an eye on if you're building a stream community.
 
-Quick hits.
 
-DeepMind announced an AI co-mathematician that scored forty-eight percent on FrontierMath Tier four. The bigger signal? A working mathematician said one of the proofs it generated could form a PhD thesis chapter.
+Industry and business news. [pause]
 
-Figure shared a robotics demo of two Helix-02 robots making a bed together. No explicit communication channel. They were just inferring each other's actions from observation. <soft>Which is either very cool or very unsettling, depending on how you feel about robots.</soft>
 
-And Perplexity rolled out its Personal Computer agent to all Mac users. Agentic action across your local files, plus their Comet browser. [pause]
 
-One thing to try today.
+Greece is putting AI protections into its constitution. Prime Minister Mitsotakis cited threats to democracy. Google’s Isomorphic Labs is reportedly raising more than two billion dollars to scale its drug design engine, which it claims outperforms AlphaFold three. Baidu released ERNIE five point one, ranking number four on Arena’s search leaderboard, and claiming the training cost was just six percent of rival models. <soft>That last claim deserves some skepticism, but if even half true, it’s notable.</soft> [breath] OpenRouter launched something called Pareto Code, a free routing layer that auto picks the cheapest coding AI above a quality bar you set. And on the regulation front, a paper from the Institute for Law and AI is making the rounds, arguing for what they call <higher-pitch>radical optionality</higher-pitch>, governments investing now in the tools they might need in a future AI crisis, rather than overregulating today.
 
-OpenRouter Fusion lets you run the same prompt across multiple frontier models at the same time. Opus 4.7, GPT 5.4, Grok, and more. <fast>You see all the answers side by side in a single view.</fast> [pause] For someone wearing both a community-management hat and a streaming hat, this is genuinely useful. Take a prompt you reach for all the time, a Discord announcement template, a stream-title brainstorm, a community FAQ rewrite, and run it through three models at once. About ten comparisons reportedly costs around forty cents. After a few runs you'll have a personal cheat sheet of which model wins for which task. <soft>Bonus learning angle. The side-by-side view makes the personalities of different LLMs visible in a way single-chat use never will.</soft>
 
-<slow>That's your digest for Monday. Have a good one.</slow>
+
+Gaming and AI. [pause] This is your section, Chris.
+
+
+
+Figure AI demoed two of its F point oh three humanoids making a bed together. Opening doors, hanging clothes, smoothing a comforter to hotel room neatness. The twist, both robots share a single learned neural network, with no central planner, coordinating purely through visual cues. Not directly a gaming story, but the multi agent coordination pattern is exactly the kind of thing that ends up in game NPC behavior trees a few years later. [breath]
+
+
+
+Speaking of NPCs, the GDC twenty twenty six developer survey just landed. <loud>Fifty two percent of game devs now view generative AI negatively.</loud> Up from thirty percent last year. The backlash is real and it’s growing, even as the tooling improves. On the tooling side, Tencent Cloud’s HY three D engine turns text descriptions or sketches into production ready three D assets in minutes. Indie studios, take note. And Ubisoft’s generative AI gameplay team showed off a playable with three AI NPCs that hold actual back and forth conversations, remember what you said earlier, and can refuse quests that don’t fit their personality.
+
+
+
+Most relevant to the game server hosting world, Google Cloud has been showing off an Agones, Open Match, and Gemini AI integration for scalable living multiplayer servers on Google Kubernetes Engine. Dynamic NPCs, dynamic narratives, all spun up server side. <soft>If you’re in community for a hosting company, this is the future of the product page.</soft> Less fun, a Starcraft inspired strategy game just shut down its multiplayer servers because the hosting company got acquired for AI workloads. The gold rush is creating ripple effects.
+
+
+
+Quick hits. [pause]
+
+
+
+<fast>Google DeepMind’s AI co mathematician set a new high on FrontierMath Tier four at forty eight percent, more than doubling Gemini three point one Pro’s nineteen percent. Oxford’s Marc Lackenby resolved an open problem after spotting a clever proof inside an output the system’s own reviewers had rejected. AllenAI’s new EMO mixture of experts design can keep only twenty five percent of experts and lose just one percent of performance. And the University of Warwick confirmed more than one hundred new exoplanets using an AI system called RAVEN on four years of NASA TESS data.</fast>
+
+
+
+One thing to try today. [pause]
+
+
+
+[chuckle] Here’s a practical one for the community and content world. Try the Cursor in Teams pattern, or any agent that reads a chat thread and proposes action, on one of your community channels. Have an AI agent read the last fifty messages in a Discord channel and propose a moderation summary, a content idea, or a draft reply. <soft>Even if you don’t write code, agent reads channel and proposes action is the workflow community managers should be testing right now.</soft> The harness matters as much as the model. Run the experiment. [pause]
+
+
+
+<slow>That’s your digest for Tuesday. Have a good one.</slow>
