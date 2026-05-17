@@ -1,41 +1,57 @@
-Good morning! [pause] Here's your daily AI digest for Saturday, May sixteenth. [pause] Plenty to get through this morning, so let's go.
+Good morning! [pause] Here's your daily AI digest for Sunday, May seventeenth. [pause] We've got a chip company minting sixty billion dollars, OpenAI putting Codex in your pocket, and a quiet open-model bonanza that I think you'll actually care about. [long-pause]
 
-[long-pause] Starting with the big one. <loud>Cerebras just pulled off the biggest tech IPO of the year.</loud> The wafer-scale chipmaker debuted on Nasdaq Thursday, priced shares at one hundred and eighty-five dollars, and popped about sixty-eight percent on day one. At one point the market cap hit ninety-five billion dollars. By Friday's close the stock had cooled a bit and settled the company around sixty billion. Still, this is the biggest tech listing since Uber in twenty nineteen, and Cerebras walked away with five and a half billion dollars in fresh capital.
 
-Here's the bit that actually matters for engineers, though. On CNBC, Cerebras' CFO, Bob Komin, pushed back hard on the idea that Cerebras only handles small models. He said the company is currently serving trillion-parameter models. And he name-dropped two of them. <loud>OpenAI five point four, and five point five.</loud> Both running on Cerebras hardware. [chuckle] So the not-NVIDIA chip story finally has a public-market price tag, and a confirmed frontier-scale customer to go with it.
 
-<soft>The bigger theme the newsletters keep coming back to is the inference inflection. The money is moving from training prestige to serving economics, and Cerebras is one of the first companies to ride that all the way to a public listing.</soft>
+Starting with the big one. [pause] <loud>Cerebras just went public at a sixty billion dollar valuation.</loud> Biggest tech I.P.O. of the year so far. Shares more than doubled out of the gate and closed at two hundred and eighty dollars. [chuckle] Not bad for the wafer-scale chip company everyone wrote off as too weird to win.
 
-[breath] Onto LLMs and coding tools, where the week was honestly wild.
 
-<loud>OpenAI's Codex is now on mobile.</loud> Inside the ChatGPT iOS app, across all plans. Your coding agents keep grinding on a Mac mini at home, and you approve, redirect, or kick off new tasks from your phone. OpenAI says it's already at four million weekly active users, five times more messages per user than before, and one million app downloads in the first week. [pause] The coders who walk around with their laptops open in coffee shops just so the agent doesn't stop? Their lives just got better.
 
-GitHub answered with the Copilot App. A native desktop environment for running parallel coding sessions, managing pull requests, and swapping models on the fly. VS Code shipped a multi-agent window. Cursor and Codex Mobile are already there. <fast>Everyone is converging on the same form factor: agent first, code second.</fast>
+The really juicy bit came from CFO Bob Komin on CNBC. He pushed back hard on the "small models only" narrative, said there's no limit to the model size Cerebras can serve, and then casually mentioned that they're currently serving trillion-parameter models, including internal OpenAI models, [pause] specifically OpenAI five point four and five point five. <soft>That's a pretty wild flex to drop on live television.</soft>
 
-[breath] Anthropic had a rougher week. Starting June fifteenth, they're splitting the Agent SDK and Claude minus p out of normal subscription limits into a separate monthly credit pool. Pro users get twenty dollars in agent credits. Max five x gets one hundred. Max twenty x gets two hundred. <soft>No rollover. No mercy.</soft> Power users running custom harnesses are <loud>furious</loud>, and T three founder Theo Browne publicly cancelled, with hundreds of others following. [tsk] To soften the blow, Anthropic also reset everyone's five-hour and weekly Claude rate limits this week, almost certainly because they got fresh GPU capacity from xAI. The Financial Times now pegs Anthropic at a nine hundred billion dollar valuation with forty-five billion ARR by end of May. So even with the backlash, the company is doing just fine.
 
-Quickly, on the same beat. xAI shipped a CLI called Grok Build for SuperGrok Heavy subscribers. Nous Research wired Codex into Hermes Agent, so Hermes sessions can now run on your ChatGPT subscription. And Moonshot's Kimi launched a browser extension called Web Bridge that gives every major coding agent, Claude Code, Cursor, Codex, Hermes, you name it, human-like web interaction.
 
-[breath] Industry and business. <loud>Anduril doubled.</loud> The autonomous weapons maker closed a five billion dollar Series H at a sixty-one billion dollar valuation, up from thirty billion just under a year ago. Revenue hit two point two billion in twenty twenty-five, and the U.S. Army handed them a ten-year contract with a twenty billion dollar ceiling. <soft>Lockheed and Boeing are officially nervous.</soft>
+Why does this matter? <build-intensity>The whole AI infrastructure story is shifting from training prestige to inference economics.</build-intensity> Six months ago, Nvidia spent twenty billion dollars to absorb Groq. Now Cerebras prints a sixty billion dollar valuation. The market is finally pricing non-Nvidia infrastructure as a real bet, not a vanity science project. [long-pause]
 
-OpenAI and Apple are reportedly heading for the lawyers. Bloomberg says OpenAI has hired a law firm to explore a breach-of-contract notice over the twenty twenty-four Apple Intelligence deal. The partnership didn't drive the billions of paid signups OpenAI expected, and Apple is allegedly fuming over OpenAI poaching their hardware engineers. iOS twenty-seven, expected at W.W.D.C. on June eighth, will reportedly open Siri up to Claude and Gemini. [chuckle] So we are very firmly in the "it's complicated" phase of that relationship.
 
-Also worth noting. LinkedIn is preparing to cut about five percent of staff. Cisco is shedding around four thousand roles to pivot toward AI infrastructure. And California Governor Gavin Newsom proposed a seven point two five percent sales tax on software and SaaS starting January twenty twenty-seven. <soft>If you sell software in California, this one is going to sting.</soft>
 
-[breath] Onto gaming and AI, which had a quietly busy week.
+Moving to L.L.M.s and coding tools. [pause] OpenAI dropped Codex into the ChatGPT mobile app this week, in preview, across every plan. You can approve agent decisions, kick off new tasks, and ride along on long-running threads from your phone while your laptop or home Mac mini grinds away in the background. The numbers from OpenAI's dev team are eye-watering. Four million weekly active users. Five times more messages per user. Over a million app downloads in the first week. [pause] <fast>Anthropic had similar mobile features earlier this year, but OpenAI's marketing deliberately pokes at them, and the user numbers suggest the poking is working.</fast>
 
-NVIDIA is expanding its ACE platform from conversational NPCs to autonomous game characters. We're talking agents that perceive, plan, and act like human players. Enemies that adapt dynamically. Companions that actually understand what the player is trying to do. The NPC generation AI market is now sized at one point eight six billion dollars for last year, growing to two point four four billion this year, a thirty-one percent compound annual growth rate.
 
-The flip side though. The GDC twenty twenty-six developer survey landed this week, and <loud>fifty-two percent of devs now think generative AI is hurting the industry.</loud> Only seven percent see it as positive. That's a sharp swing from prior years. [pause] <soft>Worth keeping in mind when you're talking with your community. Players want better NPCs. Working artists and designers are watching pipelines change underneath them. Those are not the same conversation.</soft>
 
-On streaming, Twitch previewed its twenty twenty-six update slate. Dual-format streaming, two K video, and AI-powered moderation tools. Neuro-sama is still the most-subscribed channel on Twitch by paid actives, sitting around one hundred and sixty-five thousand. Two third-party tools worth knowing about: FrostyTools will scan a VOD and auto-pull clip-worthy moments for about twenty-five cents an hour. And Questie AI is pushing what it calls an AI co-host that reacts to gameplay in real time. <soft>For a one-person show, that could be a real change in how stream content gets repurposed.</soft>
+In the same week, Anthropic angered a lot of power users with a new agent credit policy. Starting June fifteenth, Agent S.D.K. and Claude dash p calls won't draw from your regular subscription limits anymore. They get a separate monthly credit pool. Twenty dollars for Pro. One hundred for Max five x. Two hundred for Max twenty x. [pause] And the credits don't roll over. T-three founder Theo Browne and hundreds of other developers publicly cancelled their subscriptions over it. [sigh] Agents burning tokens have broken the subscription model, and nobody has figured out a clean answer yet.
 
-[breath] Quick hits.
 
-<fast>Figure ran a twenty-four hour autonomous humanoid livestream. Sorting packages, no teleop, entirely onboard inference, with human-parity throughput. Datadog open-sourced Toto two point zero, five time-series forecasting models under Apache two point zero. And Meta's Ray-Ban Display glasses now ship with neural handwriting for everyone, plus a web developer toolkit. The everyday A R computer just got a step closer.</fast>
 
-[breath] And then, one thing to try today.
+On the open-source side, this past month was a bonanza. <fast>Gemma four landed under Apache two point zero, finally killing Google's custom-license headaches. DeepSeek shipped V four in two sizes. Kimi K two point six jumped on long-horizon performance. Xiaomi's MiMo two point five Pro is neck-and-neck with flagship Western models. And G.L.M. five point one improved across the board.</fast> [pause] If you've been hesitant to play with open models, this is the moment. The gap to closed frontier models, per Epoch AI's index, sits at roughly three to seven months. Closer than the headlines suggest. [long-pause]
 
-Spend fifteen minutes with Codex Mobile inside the ChatGPT iOS app. Set a small Saturday project. A quick script to scrape your last week of Twitch VOD timestamps, or a Discord bot snippet you've been meaning to ship. Kick it off on your desktop, then approve or redirect it from your phone while you're doing something else. <soft>The point isn't the script. The point is internalising what it feels like to NOT be tethered to the desk while an agent runs.</soft> That intuition will sharpen the way you write about AI tooling for the community. And it's the same workflow GitHub Copilot App and VS Code Agents are going to push everyone toward anyway. [pause] Might as well be early.
 
-<slow>That's your digest for Saturday. Have a good one.</slow>
+
+Industry and business. [pause] The OpenAI and Apple relationship is reportedly fraying. Bloomberg says OpenAI has lawyered up to explore a breach-of-contract case over the twenty twenty-four ChatGPT-Siri deal. The expected billions in paid sign-ups never materialised, and Apple is opening Siri to Claude and Gemini in i.O.S. twenty-seven at W.W.D.C. on June eighth. [chuckle] <soft>With OpenAI working on its own Jony Ive hardware in twenty twenty-seven, this might be the start of a real rivalry, not just a partnership wobble.</soft>
+
+
+
+Defence tech keeps printing. Anduril closed a five billion dollar Series H at a sixty-one billion dollar valuation, doubling its worth in under a year. Two point two billion dollars in revenue last year. A ten-year, up-to-twenty-billion-dollar Army contract in March. Pentagon hypersonic work. [pause] Defence is the loud-and-proud AI story right now, whether you like it or not.
+
+
+
+And OpenAI rolled out a personal finance experience inside ChatGPT for Pro users in the U.S. Connect your financial accounts, get spending analysis and grounded Q-and-A. Internal benchmarks have GPT five point five scoring in the high seventies and low eighties on complex personal-finance tasks. [pause] <soft>The fintech assistant layer should probably be reading the same numbers and getting nervous.</soft> [long-pause]
+
+
+
+Gaming and AI. [pause] Two big trends colliding. On the development side, roughly fifty percent of all studios are now using AI in production. Seventy-eight percent at triple-A. N.P.C.s with long-term memory of player interactions are starting to show up in shipped games, and the N.P.C. AI market is projected to grow from one point four billion dollars to five point five billion dollars by twenty twenty-nine. [pause] But here's the friction. In the latest G.D.C. survey, <loud>fifty-two percent of developers said generative AI is hurting the industry.</loud> Only seven percent called it positive. That tension is going to live in every game-related Discord this year.
+
+
+
+For streamers specifically, Twitch is rolling out a big twenty twenty-six update set. Dual-format streaming, two K video support up from ten-eighty, A.I.-powered moderation, and new monetization features. The streamer A.I. tool stack is maturing fast too. Meld Studio is going after O.B.S. by building A.I. features in instead of bolting them on through plugins. Tools like ViddyFlow are doing multi-signal highlight detection for auto-clips. <fast>And channels using A.I. chat companions are reporting up to thirty percent higher viewer retention and ten to twenty percent subscription growth.</fast> [pause] Worth knowing about, even if you don't adopt any of them yet. [long-pause]
+
+
+
+Quick hits. [pause] Runway shipped Agent, an agentic assistant inside its video platform that collaborates on full creative workflows. [pause] Higgsfield launched Supercomputer, a cloud A.I. agent orchestrating multiple models for end-to-end creative work. [pause] Meta's Ray-Ban Display rolled neural handwriting out to everyone, plus third-party developers can now build web apps for the glasses. [pause] LinkedIn is cutting about five percent of its roughly seventeen-thousand-five-hundred employees. [pause] And Cisco is laying off nearly four thousand to redirect spending to A.I. infrastructure. [long-pause]
+
+
+
+One thing to try today. [pause] Spin up a simple stream-agent workflow. Take one V.O.D. from a recent KrispyPidgeon stream and run it through one of the new A.I. clip generators, ViddyFlow or Twitch's built-in highlight detection. You're testing two things at once. How good is the detection on your actual gameplay style, and does the auto-clipping give you a publishing rhythm you can sustain without burning your whole evening? [pause] Run the same V.O.D. through two tools, compare the outputs. That little exercise is the fastest way to build real intuition about where A.I. fits in your content pipeline, [chuckle] and it doubles as material for a "I tested the clip tools so you don't have to" community post.
+
+
+
+<slow>That's your digest for Sunday. Have a good one.</slow>
