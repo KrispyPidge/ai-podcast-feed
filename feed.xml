@@ -12,7 +12,17 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:category text="Technology"/>
     <atom:link href="https://krispypidge.github.io/ai-podcast-feed/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Mon, 18 May 2026 06:44:12 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2026 06:43:21 +0000</lastBuildDate>
+    
+    <item>
+      <title>Daily Digest — Tuesday, May 19, 2026</title>
+      <description>Your daily AI-generated audio digest.</description>
+      <enclosure url="https://krispypidge.github.io/ai-podcast-feed/episodes/2026-05-19.mp3" length="7126272" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://krispypidge.github.io/ai-podcast-feed/episodes/2026-05-19.mp3</guid>
+      <pubDate>Tue, 19 May 2026 06:43:21 +0000</pubDate>
+      <itunes:duration>7:25</itunes:duration>
+      <itunes:episode>43</itunes:episode>
+    </item>
     
     <item>
       <title>Daily Digest — Monday, May 18, 2026</title>
