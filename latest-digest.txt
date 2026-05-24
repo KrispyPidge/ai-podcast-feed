@@ -1,53 +1,65 @@
-Good morning! [pause] Here's your daily AI digest for Saturday, May twenty-third. [pause] Big week. Let's get into it.
+Good morning! [pause] Here’s your daily AI digest for Sunday, May twenty-fourth. [pause]
 
-  
 
-<loud>Every model lab is becoming an agent lab.</loud> [pause] That's the through line of the entire week. OpenAI's Greg Brockman said it plainly, the model on its own is no longer the product. And this isn't talk. [breath] AI twenty one just shut down its model team to go all in on agents. DeepSeek, which built its name as a pure model research shop, just stood up its first Harness team for orchestration. Even Google's Sundar Pichai sat down for an exclusive interview at I O and said within three years, agents will be running twenty four seven across every device you own. [pause] His framing for today's AI? <slow>A flip phone, compared to what's coming.</slow> [chuckle] Bold. [pause] <soft>And worth holding lightly, but the direction of travel is undeniable.</soft> The catch, as swyx flagged it, if labs co train their models with their own agent harnesses, the best performance lives behind closed products, not open APIs. Something to watch as OpenAI is expected to file IPO paperwork next week.
 
-  
+Starting with the big one. [long-pause] <loud>Every major frontier AI lab has officially become an agent lab.</loud> That’s the line landing across newsletters this weekend. OpenAI’s Greg Brockman framed it pre-IPO as a moat built from the model plus the harness plus the product surface plus memory plus economics. [pause] AI21 shut down its model team entirely to pivot to agents. Even DeepSeek, long the open-weights darling, just stood up its first ever harness team. [chuckle] <soft>The model on its own is no longer the product.</soft>
 
-On the model front, Google launched Gemini three point five Flash straight to general availability at I O. Skipped the preview phase entirely. One million token context, knowledge cutoff January twenty twenty five, and a three x price hike over the previous Flash. [pause] One dollar fifty per million input tokens, nine dollars per million output. Logan Kilpatrick says it tops the APEX Agents leaderboard. Jeremy Howard pushed back that it feels eval optimized rather than cooperative. [pause] Pick your camp.
 
-  
 
-DeepSeek made its seventy five percent V four Pro discount permanent. Artificial Analysis pegs it at roughly three times cheaper than Gemini three point one Pro Preview, twelve times cheaper than GPT five point five, and <loud>nineteen times cheaper than Claude Opus four point seven.</loud> [breath] <soft>Intelligence too cheap to meter, the community says.</soft>
+Why does this matter for the work we do day to day? Every coding tool, every assistant, every content workflow you’re using is shifting from one-shot prompt to agent loop. The skill premium moves from prompt-craft to harness design. Picking tools, managing memory, setting permissions, recovering gracefully when steps break. <soft>Worth keeping in mind as we plan tooling for the team this quarter.</soft>
 
-  
 
-On coding, this was a huge week. OpenAI shipped Codex Thursday number six. New features include Appshots, attach any Mac window to a Codex thread with a command tap. Goal Mode, set a target and let Codex grind for hours or days. And my favorite, Locked Computer Use. <fast>You can trigger Codex from your phone to use your Mac apps even when the screen is locked.</fast> [pause] Anthropic put Claude auto mode on the Pro plan with Sonnet four point six. Cursor opened a Cursor SDK for custom agents, and Composer two point five reportedly runs three to eighteen times cheaper than Opus four point seven on coding benchmarks. Devin for Windows shipped. [pause] If you're not using a coding agent yet, this is the month to start.
 
-  
+Onto LLMs and coding tools. Anthropic shipped Claude Opus four point seven this week. SWE-bench Verified jumped from eighty point eight percent up to <loud>eighty-seven point six percent</loud>. CursorBench climbed from fifty-eight to seventy. Big gains across the board. [pause] Claude Code’s five-hour limits doubled across Pro, Max, Team, and Enterprise plans, and peak-hour throttling on Pro and Max is gone, thanks to the new SpaceX-Colossus compute deal.
 
-The dollar figure of the week comes from SpaceX's S one filing. Anthropic is paying SpaceX one point two five billion dollars per month through May twenty twenty nine for compute on the Colossus and Colossus two training clusters. [long-pause] That's roughly forty billion dollars in committed compute spend. And Anthropic is also separately reported to be talking to Microsoft about Maia chips, on top of their existing Google T P U and Amazon Trainium deals. [pause] The SpaceX I P O itself targets a one point five trillion dollar valuation, with Elon Musk retaining about eighty five percent voting control through super voting shares. [chuckle] CEO for life, structured under Texas corporate law.
 
-  
 
-Infrastructure unicorns had a huge week too. Three Latent Space podcast alumni hit milestones in the same seven days. TurboPuffer at one hundred million dollars annual recurring revenue, profitable, and raised under one million dollars total. Exa raised two hundred fifty million dollars at a two point two billion valuation. Modal closed three hundred fifty five million dollars at four point six five billion. <soft>The boring infra layer is where the wealth is accruing.</soft>
+Cursor’s not standing still either. Composer two point five dropped on May eighteenth, matching Opus four point seven and GPT five point five on benchmarks. And the Cursor SDK has opened up, so developers can build custom agents directly on the Cursor surface.
 
-  
 
-And on the policy front, California Governor Gavin Newsom signed a first of its kind A I worker protection executive order, one day after Meta laid off eight thousand employees. The state has an A I job impact dashboard launching within ninety days, and WARN Act updates for faster layoff alerts coming within one hundred eighty days. California has already seen over seventy thousand tech layoffs in twenty twenty six. [pause] A real shift in how states are responding to the AI labor squeeze.
 
-  
+OpenAI’s weekly Codex drop, episode six this time, shipped Appshots, goal-loop improvements, locked-device remote computer use, annotation mode, plugin sharing, and analytics. <soft>One developer on Twitter said they hadn’t opened a traditional IDE in over a month.</soft> [chuckle] We are living in strange times.
 
-Now to the gaming beat. Google DeepMind's Project Genie now connects to Street View. <build-intensity>Two hundred eighty billion images across one hundred ten countries and all seven continents</build-intensity>, and Google A I Ultra subscribers can drop into simulated versions of real world locations, a snowy New York block, a sunny London street, and navigate them in real time. [pause] It's still video game quality, not photorealistic, and not yet physics aware. But the implication for game devs working on real world environments is enormous.
 
-  
 
-The harder gaming headline though is from the GDC twenty twenty six developer survey. <loud>Fifty two percent of game developers now view generative A I negatively</loud>, up from thirty percent just last year. [pause] So while the tech keeps shipping, NVIDIA ACE production grade text to speech, Resemble's Chatterbox voice cloning, Inworld's NPCs that remember betrayals, Latitude's Voyage A I R P G platform built on a five year World Engine, [breath] the developer community is increasingly cautious. [pause] <soft>Worth keeping in mind. The tech is racing, the social licence isn't.</soft>
+DeepSeek made its seventy-five percent V4-Pro discount permanent. Artificial Analysis is calling it the clearest market signal of the week on inference cost-performance. <fast>And GitHub Copilot Pro is moving to AI Credits-based flex billing on June first, with a new Copilot Max tier for sustained heavy users.</fast>
 
-  
 
-And for community managers, Meta launched Forum, a standalone iOS app that pulls Q and A threads out of Facebook Groups into a Reddit style feed. Built in AI assistant for admins, moderation tools, leans on years of existing group conversation data. [pause] A new platform surface to watch.
 
-  
+Onto industry and business. <build-intensity>Anthropic just committed one point two five billion dollars per month to xAI for compute, all the way through May twenty twenty-nine.</build-intensity> The deal could bring xAI more than forty billion dollars in total. That’s what’s underwriting the Claude Code limit increases.
 
-<fast>Quick hits.</fast> Anthropic's Project Glasswing found over ten thousand high and critical severity vulnerabilities in essential software in one month using Claude Mythos Preview. [pause] Perplexity open sourced Bumblebee, a read only security scanner for Mac and Linux. [pause] Cartesia Sonic three point five hit number one on Speech Arena, with eighty two milliseconds end to end first audio in production, across forty two languages. Big deal if you use A I voice tools in your content workflow.
 
-  
 
-And here's your one thing to try today. If you have access to Codex, try Goal Mode for something multi hour. Set it up to organize your Discord moderation policies into a reusable playbook. Or draft a content pipeline template that pulls game anniversary dates, your stream schedule, and the games you cover into one weekly view. [pause] Let it work in the background while you stream. <soft>The kind of long horizon task that wasn't really feasible six months ago.</soft> If you don't have Codex, the same workflow runs in Claude Code or Cursor.
+On regulation, the US government’s Center for AI Standards and Innovation now has formal agreements with Google DeepMind, Microsoft, and xAI to test models before public release, on top of its existing deals with OpenAI and Anthropic. <soft>Most observers tie the pivot toward oversight back to Anthropic’s Mythos model, which Anthropic says found more than ten thousand high or critical software vulnerabilities in a single month, under something it’s calling Project Glasswing.</soft>
 
-  
 
-<slow>That's your digest for Saturday, May twenty-third. Have a good one.</slow>
+
+And there’s pushback brewing on US immigration policy from Andrew Ng, Garry Tan, and Nick Davidov. A proposed rule would force green-card applicants to leave the country during their application, which they argue would gut the AI talent pipeline.
+
+
+
+Onto gaming and AI. [pause] Ubisoft’s R&D group showed a project called Teammates this week. A playable experience where three AI NPCs respond to natural voice commands. Each NPC has its own personality profile and reads contextual intent. You say what you mean, the NPC interprets, instead of parsing rigid command syntax. An eighty-person team built it. <soft>The kind of thing that could quietly reshape what we expect from co-op games in the next few years.</soft>
+
+
+
+Tencent’s HY 3D AI Creation Engine converts text, sketches, or images into production-quality 3D assets in minutes. <fast>Massive for indie and modding pipelines that hit asset bottlenecks.</fast>
+
+
+
+Google DeepMind’s Project Genie now integrates with Street View. Developers can turn real US locations into interactive worlds, prompt-driven, rather than hand-crafting maps tile by tile.
+
+
+
+Caveat though. Forty-seven percent of game developers surveyed at GDC twenty twenty-six say they’re worried about, <soft>and I’m paraphrasing here</soft>, soulless outputs if AI replaces too much artistry. The studios being praised in dev threads right now are the ones pacing adoption thoughtfully, not the ones shipping half-baked features.
+
+
+
+Onto quick hits. ByteByteGo’s EP two-sixteen is a sharp primer on RAG versus agents. Four-step RAG pipeline. Embed, retrieve, inject, generate. Agent loop. Read goal, pick tool, execute, re-reason. Cleanest framing I’ve seen if anyone on your team still conflates the two. [pause] The MCP spec hit its July release-candidate milestone with stateless MCP and first-class extensions, which makes it easier to ship third-party plugin surfaces without server-side session state. And Twitch finally previewed its twenty twenty-six roadmap. Dual-format streaming, 2K video support, smarter AI moderation, new monetization options.
+
+
+
+One thing to try today. [pause] Spend thirty minutes auditing your AutoMod settings on the KrispyPidgeon channel, then trial one of the AI clip generators, Streamladder or OpusClip. Twitch’s twenty twenty-six moderation classifies behavior patterns instead of just matching keywords. <soft>The clip tools can turn a four-hour stream into five to ten TikTok-ready shorts overnight.</soft> Pair that with a quick test of Cursor Composer two point five or Claude Code on one of your own community-tooling scripts. Automating one repetitive Discord workflow this week buys back hours of community-management time.
+
+
+
+<slow>That’s your digest for Sunday. Have a good one.</slow>
