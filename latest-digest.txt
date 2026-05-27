@@ -1,41 +1,65 @@
-Good morning! [pause] Here's your daily AI digest for Tuesday, May twenty-sixth. [pause]
+Good morning! [pause] Here's your daily AI digest for Wednesday, May twenty-seventh. [pause] We've got infrastructure decacorns, the Pope going head to head with frontier AI labs, and a mystery Anthropic model called Mythos showing up in places it really shouldn't. [long-pause] Let's get into it.
 
-Starting with the big one. [long-pause] <loud>Google's AI just cracked nine open Erdos problems.</loud> Two of those had been unsolved for fifty-six years. [chuckle] And the kicker, the whole thing cost a few hundred dollars per problem. DeepMind's new system, AlphaProof Nexus, pairs a language model with the Lean proof assistant. The model proposes a proof, Lean checks it, the model iterates, and eventually one passes. <soft>It also resolved forty-four conjectures from the Online Encyclopedia of Integer Sequences while it was at it.</soft> The timing was almost cinematic. Google's paper landed exactly one day after OpenAI announced its own Erdos breakthrough. The point isn't who was first. It's that frontier AI is now generating original, machine-verified mathematics, at the price of a nice dinner.
+  
 
-Onto the model and coding tool news. [pause]
+Starting with the big one. [pause] <build-intensity>The AI infrastructure layer just minted its first true decacorns.</build-intensity> Reports landed overnight that Fireworks is in talks for a fifteen billion dollar round, a three point seven five x jump in seven months. Baseten is raising one billion dollars at an eleven billion dollar valuation, more than double its February number. And OpenRouter just closed a one hundred and thirteen million dollar Series C led by CapitalG, with Nvidia, ServiceNow, MongoDB, Snowflake, and Databricks all piling in. [pause] OpenRouter's volume has five x'd in six months to about twenty-five trillion tokens per week. <loud>Twenty-five trillion, per week.</loud> Across eight million users. [pause] The thesis here is clean. If apps are going to use multiple models, the router layer becomes a real business. And the inference providers underneath it can become decacorns without ever training a frontier model themselves. <soft>For anyone in hosting, this is the playbook. Low latency, multi-tenant compute is the prize, and the margins are real.</soft>
 
-<fast>DeepSeek permanently dropped V4 Pro pricing by seventy-five percent.</fast> It's now forty-three and a half cents per million input tokens, and eighty-seven cents per million output tokens. That undercuts almost every closed source frontier model. The open ecosystem just keeps pushing prices down.
+  
 
-Gemini three point five Flash is now generally available. Google is pitching frontier-level intelligence at roughly four times the speed of comparable models, with a one million token context window. The interesting strategic call here is that Google chose to lead with the fast, cheap model, not a heavyweight competitor to Claude Mythos. They're betting on efficiency over headline benchmarks.
+[long-pause] On to LLMs and coding tools.
 
-Speaking of Claude Mythos, Anthropic published the first results from Project Glasswing. In one month, with about fifty partners, the still-gated frontier model surfaced over ten thousand high or critical severity vulnerabilities. Cloudflare alone found two thousand bugs, with a better false positive rate than human testers. Mozilla fixed two hundred seventy-one of them in Firefox one fifty. And one partner bank used Mythos to detect and block a one and a half million dollar fraudulent wire transfer. Glasswing is now expanding to U.S. and allied governments before any general release.
+  
 
-Over in coding tools, Cursor shipped version three point zero with a new Agents Window and a Design Mode. But the bigger story is in the JetBrains Developer Ecosystem Survey for twenty twenty-six. <build-intensity>Claude Code went from three percent in April twenty twenty-five to eighteen percent this past January. A sixfold jump in nine months. No developer tool has ever grown that fast.</build-intensity> Meanwhile, GitHub Copilot's share among professional developers slid from sixty-seven percent down to fifty-one. Among developers with ten plus years of experience, forty-six percent picked Claude Code as their daily driver, and only nine percent picked Copilot.
+Anthropic's mystery model Mythos is everywhere this week. Engineer Sholto Douglas posted that Mythos solved OpenAI's high-profile Erdos unit-distance conjecture with what one mathematician called a, quote, "cute, simple proof," end quote. Different route than OpenAI's solution, but it got there. [pause] Anthropic also published a Mythos Preview page on their red domain, and Mythos was briefly visible inside Claude tools as Mythos One and claude-mythos-one-preview. [chuckle] Someone left a door open. [pause] Separately, Anthropic disclosed Mythos has flagged over twenty-three thousand potential security flaws across open-source projects under something called Project Glasswing.
 
-On to industry and business. [pause]
+  
 
-The White House approved nine billion dollars to help U.S. intelligence agencies acquire advanced AI chips. The concern, reportedly, is that the spy services are falling behind on frontier model deployment. McKinsey is rethinking its billing model as AI erodes the value of billable hours, and clients push for outcome-based fees. [chuckle] <soft>When the consultancies start renegotiating their own business model, you know the disruption is real.</soft>
+Meanwhile, xAI launched Grok Build, its first proper coding agent. Started at three hundred dollars a month for SuperGrok Heavy, now expanded to all SuperGrok and X Premium Plus users. It's a CLI that runs in a project folder, supports parallel sub-agents, worktrees, headless mode, and can even read existing Claude Code-style instruction files. [pause] Musk also confirmed Grok V9-Medium, the one point five trillion parameter foundation model, has finished training and ships in two to three weeks.
 
-And Starbucks just scrapped its AI inventory system after nine months. Persistent miscounts, mislabeled products across North American stores. A reminder that the gap between demo and production is still where most projects die.
+  
 
-The revenue picture is wild. OpenAI has crossed twenty-five billion dollars in annualized revenue, and is reportedly taking early steps toward an IPO, possibly as soon as late twenty twenty-six. Anthropic's run rate is now around thirty billion dollars. That's up from roughly nine billion at the end of last year. Anthropic also opens its first Italian office in Milan this week.
+A few more from the coding world. Anthropic shipped a security guidance plugin for Claude Code and reports a thirty to forty percent drop in security-related PR comments internally. The new DeepSWE benchmark is winning practitioner endorsement as the first code benchmark that actually tracks how it feels to use these tools. <fast>Google's Antigravity 2.0, Meta's Manus on mobile, Codex's new Locked Use mode for cost controls, all landed this cycle.</fast> [pause] vLLM finally shipped a Rust frontend that pushed throughput from one hundred and sixty-two requests per second to eight hundred and thirty-seven in early tests. And Gemma 4 is matching or beating same-size Qwen 3.5 and 3.6. <soft>Nathan Lambert at Interconnects says American open models are finally building real momentum after years of Qwen dominance.</soft>
 
-Now for the gaming and AI section. [pause] This one matters directly for your day job.
+  
 
-<loud>Hathora, the game server orchestration provider, was acquired by Fireworks AI.</loud> Frost Giant Studios has already announced that Stormgate's multiplayer is going dark because of the acquisition. They called out the loss of their game server orchestration partner specifically. For anyone in game server hosting, this is a clear signal. AI inference infrastructure is starting to absorb gaming infrastructure outright. <soft>Studios picking partners right now need to be asking which providers are mission-focused on games, versus which ones are potential AI acquisition targets.</soft>
+[long-pause] Industry and business.
 
-The broader gaming AI mood is split. GDC numbers say seventy-eight percent of triple-A studios already use AI-powered tools in production, and ninety-seven percent of developers use AI for asset creation. But fifty-two percent of game professionals now view generative AI negatively, up from thirty percent in twenty twenty-five. And eighty-five percent of gamers hold negative attitudes toward AI in games. Visual artists, designers, and writers are the most negative. They cite cut junior roles and a flood of low-effort filler. The sentiment gap matters for studio public relations, and for how server-side AI features get marketed.
+  
 
-On the creator side, [pause] Neuro-sama, the AI-powered VTuber built by Vedal, is now the most subscribed channel on Twitch. Roughly one hundred sixty-two thousand active subscribers. <higher-pitch>Twitch is leaning right into the moment with its twenty twenty-six platform updates,</higher-pitch> dual-format streaming so you can broadcast horizontal and vertical at the same time, two-K video, AI-powered moderation, and new monetization tools for creators.
+Pope Leo XIV signed his first encyclical, Magnifica Humanitas, on May fifteenth, and the Vatican formally released the two hundred and thirty-five page document on May twenty-fifth. It draws a direct line from AI to the Industrial Revolution, echoing Pope Leo the Thirteenth's eighteen ninety-one encyclical on workers' rights. [pause] Key arguments: <loud>technology is never neutral.</loud> Lethal decisions must never be delegated to AI. And quote, "a moral AI means nothing if that morality is determined by a few," end quote. [pause] Here's the wild part. Anthropic co-founder Chris Olah broke tradition and joined the Pope at the formal presentation, saying every frontier AI lab operates inside incentives that can conflict with doing the right thing. [chuckle] That's a sentence I did not have on my bingo card for twenty twenty-six.
 
-Quick hits. [pause]
+  
 
-Waymo paused robotaxi service in Atlanta, San Antonio, Dallas, and Houston after vehicles repeatedly drove into flooded roads, despite a software recall just the previous week. One unoccupied Waymo got stuck in Atlanta floodwaters for an hour. Federal regulators are monitoring.
+On the open-source safety front, a tool called Heretic just stripped Llama 3.3 guardrails in ten minutes using four lines of code. It removed Gemma 4's safety training within ninety minutes of release. The creator says Heretic has produced over three thousand five hundred decensored models with thirteen million combined downloads. <soft>Google called this a known technical challenge facing all open models. Meta declined to comment.</soft> Modified models answered detailed questions on ricin dosage and worse. <decrease-intensity>It's a hard counterpoint to the bullish open-weights momentum story.</decrease-intensity>
 
-Hugging Face's LeRobot team released a fully three-D printable bipedal humanoid for about twenty-five hundred dollars, using off-the-shelf actuators. The current drop covers the legs only. The upper body is on the roadmap.
+  
 
-And Perplexity open-sourced Bumblebee, a Mac OS and Linux scanner that checks for risky packages, extensions, and AI tool configurations during supply chain incidents. Worth keeping in your toolkit if you ever wear a sysadmin hat for community infrastructure.
+[pause] The AI cost-versus-value debate hit Uber. COO Andrew Macdonald said publicly that linking higher token usage to shipping more consumer features is, quote, "hard to justify." That was after their CTO complained about burning Claude Code budget. Duolingo also quietly stopped evaluating employee performance based on AI usage. Notable reversal from last year's AI-first messaging. [pause] And two big AI-driven layoff stories. Intuit cutting about three thousand staff, seventeen percent of the company, to fund AI investment. Wix planning roughly one thousand cuts, twenty percent, its largest layoff ever.
 
-One thing to try today. [pause] The Rundown has a guide on building an AI secretary that scans Slack, Gmail, and your calendar each morning, then writes a prioritized to-do list to a single Mono Note markdown file. It has feedback fields it learns from over time. For a community and content manager juggling Discord, X, TikTok, Twitch, YouTube, Instagram, Facebook, and a blog, that's a near-perfect first agent to build. <soft>And the pattern, a language model plus a small set of skill files plus a daily run, also doubles as a hands-on lesson in how modern agent stacks really work.</soft> Two birds, one weekend.
+  
 
-<slow>That's your digest for Tuesday. Have a good one.</slow>
+[long-pause] Gaming and AI.
+
+  
+
+According to a recent G.D.C. survey, seventy-eight percent of triple-A studios already use AI tools in production. The 2026 frontier is what devs are calling memory-first AI. NPCs that remember a player's style, prior choices, and even tone of voice across sessions. Inworld AI is leaning hard into Claude and GPT-backed NPCs with long-term emotional state. <soft>On the infrastructure side, Coherence 2.0, the multiplayer engine and hosting platform, is showing up in indie dev conversations about democratizing multiplayer hosting.</soft> [pause] Two practitioner notes for streamers and tinkerers. Qwen 3.6 35B-A3B is hitting around one hundred and ten tokens per second in local agentic workflows on a twelve-gig card like the RTX 4070 Super. That puts an agentic coding setup on a streamer-grade rig. [pause] And a much-shared clip this week showed Codex reverse-engineering and patching firmware on a cheap MP3 player. [chuckle] Honestly, that's a stream segment writing itself.
+
+  
+
+[long-pause] Quick hits.
+
+  
+
+<fast>Ferrari unveiled the Luce, its first EV, designed with Jony Ive's LoveFrom. Six hundred and forty thousand dollars, one thousand and thirty-five horsepower from four motors, the lowest drag coefficient in Ferrari history, and it captures real motor vibrations instead of synthesizing fake EV sound.</fast> [pause] The U.S. signed a two billion dollar quantum deal under the CHIPS Act, with IBM getting one billion federal plus one billion in matching cash to launch a quantum foundry called Anderon. <soft>Representative Zoe Lofgren called the structure illegal and troubling on so many levels.</soft> [pause] And in the weirder corner of the news, China sent stem-cell-derived artificial human embryos to the Tiangong space station to study radiation and microgravity effects. <soft>I'll leave that one with you.</soft>
+
+  
+
+[long-pause] <build-intensity>One thing to try today.</build-intensity>
+
+  
+
+Borrow Jack Clark's newsletter-as-skill trick from this morning's Import AI. Point Claude or another AI at your own past content. Old stream V.O.D. descriptions, blog posts, your content calendar, even a folder of Discord announcements. Ask it to extract themes, find gaps, and propose twenty new content angles you haven't tried yet. [pause] Clark did exactly this with his own newsletter archive, and ended up with patterns and graphs about his own work he'd never seen. <soft>It's a much higher-leverage use of AI than "write me a tweet."</soft> The model becomes a version of you that has actually read everything you've ever published. [pause] Bonus move from Ethan Mollick this morning: try the same exercise once in tutor mode. In Claude that's the "learning" style. In ChatGPT, type slash learn. Push back on your own ideas instead of just generating new ones.
+
+  
+
+[long-pause] <slow>That's your digest for Wednesday. Have a good one.</slow>
