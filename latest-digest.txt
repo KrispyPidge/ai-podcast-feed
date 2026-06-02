@@ -1,73 +1,51 @@
-Good morning! [pause] Here’s your daily AI digest for Monday, June first. [pause] Let’s get into it.
+Good morning! [pause] Here's your daily AI digest for Tuesday, June second, two thousand and twenty-six. [pause]
 
+Let's get straight to the biggest story. [long-pause]
 
+<loud>Anthropic just filed confidentially to go public.</loud> The S-1 landed with the SEC on June first. The valuation? <slow>Nine hundred and sixty-five billion dollars.</slow> Just shy of a trillion. [pause] For context, that is a bigger market cap than most countries' entire GDP. The company is running at forty-seven billion dollars in annualised revenue right now, up from ten billion at the end of last year. <soft>That's not a typo. That's roughly three hundred and seventy percent revenue growth in under twelve months.</soft>
 
-Starting with the big one. [long-pause] <loud>Anthropic just became the most valuable AI lab in the world.</loud> [pause] They shipped Claude Opus four point eight the same day they closed a sixty-five billion dollar raise, putting their valuation at nine hundred and sixty-five billion. That edges past OpenAI. Anthropic says Opus four point eight beats GPT five point five and Gemini three point one Pro on agentic coding, computer use, financial analysis, and Humanity’s Last Exam, all at the same five dollar input and twenty-five dollar output pricing as the previous version. Fast mode is three times cheaper, and Claude Code now spawns parallel sub-agents for long-running tasks.
+And the reason for all of it? <higher-pitch>Claude Code.</higher-pitch> Anthropic's AI coding assistant is cited by basically everyone covering this story as the primary engine of that explosive growth. The company is targeting an IPO listing around October. <soft>So we may be watching the most valuable software company in history go public in a few months.</soft>
 
+[pause]
 
+Now, onto the hardware story dominating developer Twitter this week. NVIDIA had quite the run at Computex in Taiwan.
 
-<soft>Now, for what it’s worth, the independent benches are a bit more reserved than the launch claims.</soft> Arena’s two hundred frontend and code tests, CursorBench, and llama index all put Opus four point eight within margin of error of four point seven. Slightly better on tables and layout, slight regressions on chart and content faithfulness. [chuckle] Sam Altman called Anthropic’s safety-first marketing, quote, fear-based marketing, end quote. Make of that what you will. But when the most expensive frontier model is also the new most valuable lab, the AI economy has officially reorganised around it.
+Jensen Huang showed up with three major releases. First: <loud>Nemotron 3 Ultra</loud>, a five hundred and fifty billion parameter open-weight model with a sparse mixture-of-experts design, fifty-five billion active parameters, topping the US open-weight LLM rankings at over three hundred tokens per second. That is very fast for a model that size.
 
+Second: Cosmos 3, NVIDIA's omnimodal world model for physical AI, robotics, and simulation. It ranks number one across open-weight models on text-to-image and image-to-video leaderboards, and the weights are open for anyone to use. <soft>Jensen is making a deliberate play to own the open-source AI ecosystem at the same time he's selling everyone the chips to run it.</soft>
 
+And third: RTX Spark. A new Windows superchip with one hundred and twenty-eight gigabytes of unified memory and a full petaflop of AI performance. [chuckle] That is a personal laptop with more memory than most cloud servers from five years ago. It's arriving this fall from Dell, HP, Lenovo, and Microsoft. <soft>For streamers, local AI at that scale on a laptop is genuinely exciting. Think background tasks, voice recognition, real-time moderation. Watch this one.</soft>
 
-Moving to coding tools. [pause] Today is the day GitHub Copilot switches over to usage-based billing. Microsoft is replacing the old request-based model with a virtual currency called GitHub AI Credits, priced at one cent each. If you’re on Copilot, today is the day to check your subscription against your actual usage before the next cycle hits.
+[pause]
 
+Speaking of coding tools, <loud>Microsoft Build 2026</loud> just opened today in San Francisco. The headline is Project Polaris, Microsoft's own homegrown AI coding model that will replace GPT-4 Turbo as the default for GitHub Copilot subscribers starting August. They're building their own model instead of just reselling OpenAI's. That's a meaningful strategic shift, and it's happening because developer demand has moved.
 
+GitHub Copilot Workspace is finally out of beta, with fleet mode and autopilot for multi-step autonomous coding tasks without per-step approval. And Copilot now natively supports Anthropic's Claude alongside OpenAI models.
 
-OpenAI Codex shipped a new feature called slash goal, which chains plan, build, test, and fix into a single run. The Rundown’s tutorial uses it to build a working browser game in around five minutes from a single hundred-word brief. <fast>Spin up a tiny game, iterate with more slash goal calls, add animations, tune the difficulty.</fast> It’s the most directly streamable AI coding demo I’ve seen this week, honestly.
+On the market share side, developer surveys just came in. GitHub Copilot dropped from sixty-seven percent to fifty-one percent adoption among professional developers in twelve months. Cursor is now at eighteen percent. Claude Code at ten. But here's the interesting number: when senior developers were asked which tool they'd choose for their own daily work, <loud>forty-six percent picked Claude Code</loud>, the highest of any tool. Market share follows capability, just with a lag.
 
+[pause]
 
+There's a business story worth sitting with for a second. A paper from the University of Virginia, Anthropic, and the Bank of Canada argues the US AI economy is growing at roughly two thousand six hundred percent per year in quality-adjusted terms. <soft>And almost none of it shows up in official GDP statistics.</soft>
 
-Cursor’s Developer Habits Report dropped, and the numbers are wild. The average developer is now shipping <loud>eight thousand six hundred lines of code per week,</loud> up from three thousand six hundred eighteen months ago. The top one percent of developers produce forty-six times the code of the median, and the gap is widening every single month.
+The reason: prices fall almost as fast as capability improves, so revenues only grow modestly on paper while the actual economic power compounds underneath. The warning to policymakers is direct: finance ministries running ten-year budget projections off conventional data are <loud>materially underweight</loud> the probability of a labor market shock. <soft>The shark is in the water. The instruments can't see it yet.</soft>
 
+[pause]
 
+Now for gaming, because I know you're here for this too.
 
-Open-weight models are quietly eating the middle of the market. LangChain reports one in three AI teams ran an open-weights model in April, up from one in five just nine months earlier. The standout this weekend is a model called StepFun Step three point seven Flash. <build-intensity>One hundred and ninety-six billion parameters total, eleven billion active, a built-in one point eight billion vision encoder, scoring fifty-six on SWE Bench Pro, hitting four hundred tokens per second, and runnable locally on about one hundred and twenty-eight gigabytes of RAM.</build-intensity> [pause] A frontier-class model that runs on enthusiast workstations. That changes things.
+<build-intensity>AI companies are actively buying up game server infrastructure and repurposing data center capacity for AI compute workloads.</build-intensity> PCWorld called it out directly as a live operational threat to multiplayer gaming. Unity already ended its built-in Multiplay game server hosting support in March. The global game server market is set to nearly triple over the next decade, but the AI infrastructure grab is squeezing capacity right now, and it is affecting services game communities actually depend on.
 
+On the developer sentiment side, GDC twenty twenty-six data shows fifty-two percent of game developers now view generative AI negatively. That's up from thirty percent just a year ago. <soft>The gap between boardroom enthusiasm and developer reality is real, and it's growing.</soft>
 
+On the brighter side, GDC twenty twenty-six showed a live demo of an NPC that understood a voice command it had never been programmed to recognize, and responded in character. Ubisoft's Ghostwriter tool is now generating first-draft NPC dialogue so writers can focus on story rather than volume. Latitude launched Voyage, an AI RPG platform where players build their own worlds with AI-generated NPC interactions. [pause] <soft>The player experience side of AI is improving even as developer sentiment sours. Both things are true.</soft>
 
-Quick coverage of the rest. Google Gemini three point five Flash hit general availability, four times faster than comparable models. Google also shipped Managed Agents in the Gemini API, where a single call provisions a sandboxed Linux environment with code execution, web access, and file I/O. And Gemini Spark is rolling out to U.S. AI Ultra subscribers as a twenty-four seven personal agent operating across your apps.
+[pause]
 
+<fast>Quick hits. Microsoft Build also launched Azure Agent Mesh, an open-sourced Windows Agent Framework, and Azure AI Foundry supporting models from everyone. OpenAI launched Rosalind Biodefense, its biology AI for pandemic preparedness and government partners. A hundred million permissively licensed training images landed on Hugging Face via the GPIC dataset, free to use commercially. And Claude Code had a rate limit reset last week after an Opus 4.8 bug caused sessions to spin up too many parallel subagents simultaneously. Anthropic fixed it and reset the counters.</fast>
 
+[pause]
 
-On to industry and business news. [pause] Apple is rebuilding Siri on Google Gemini. Per Bloomberg, the new Siri lives inside the Dynamic Island with a swipe-down UI for AI search, chat, and on-device tasks. Swipe further and you get a dedicated ChatGPT-style Siri app with optional routing to external AI models. <soft>Apple essentially outsourcing the brain of its assistant. Quietly one of the biggest ecosystem moves in years.</soft> Bloomberg also names John Ternus as Apple’s incoming CEO.
+One thing to try today. The Rundown AI dropped a step-by-step tutorial for building a short-form video content pipeline using Higgsfield and Claude Code. Install the CLI, have Claude interview you about your brand and content goals, generate video concepts, approve them, and let the workflow build polished short-form output. Then turn that workflow into a reusable skill so future campaigns are faster. If you stream, or if you manage content for a gaming community, this is the most practical automation tutorial I've seen in a while. The pro tip from the tutorial: run a few campaigns manually before you automate. The best workflows come from doing the thing yourself first.
 
-
-
-Meta One launched globally over the weekend. Paid tiers across Instagram, Facebook, and WhatsApp. Instagram Plus and Facebook Plus at three dollars and ninety-nine cents per month, WhatsApp Plus at two ninety-nine, Meta AI at seven ninety-nine for the Plus tier and nineteen ninety-nine for Premium with a faster thinking mode. Context worth holding onto, Meta’s twenty twenty-five ad revenue was two hundred and one billion dollars, but they have up to one hundred and forty-five billion committed to AI infrastructure in twenty twenty-six, the same month they cut eight thousand jobs. <soft>The ad-supported social network era is quietly being converted into a subscription stack.</soft>
-
-
-
-Two other quick business items. CNN sued Perplexity, alleging verbatim copies of paywalled articles. The AI search wars keep grinding through the courts. And Axios reported on an AI consultant whose client accidentally spent <loud>nearly five hundred million dollars in one month</loud> after issuing Claude licenses to employees without usage caps. [chuckle] A useful reminder that the new bottleneck on AI rollouts isn’t capability, it’s governance.
-
-
-
-Now for the gaming and AI angle. [pause] The GDC twenty twenty-six developer survey landed and it’s bracing. Fifty-two percent of game developers now view generative AI negatively, up from thirty percent just one year ago. At the same time, seventy-eight percent of triple-A studios are already using AI-powered tools in production. <soft>Top-down adoption is accelerating. The workforce is more sceptical than ever. That’s the year’s defining tension right there.</soft>
-
-
-
-The standout demo of the week is from Ubisoft. An eighty-person team led by their director of generative AI gameplay built a playable session where three NPCs respond to natural voice commands. Each character has a private vector database of episodic memories and a distinct personality profile, interpreting contextual intent rather than just parsing orders. <higher-pitch>It’s the closest the AI NPCs that actually feel alive pitch has come to a defensible demo.</higher-pitch>
-
-
-
-Two research items worth noting. NVIDIA-affiliated work called Gamma World shipped a generative multi-agent world model running at twenty-four frames per second. And a project called min W M demoed a real-time interactive video world model. Both point toward generative gameplay layers operating at frame rate. If you care about what’s underneath the next decade of sandbox and simulation games, file these away.
-
-
-
-For quick hits. [pause] DoorDash published a deep dive on how they cut chatbot hallucinations by ninety percent using a multi-turn simulation flywheel. An LLM playing a customer, an LLM as judge grading every transcript, and a case state intermediate representation that synthesises raw tool history before the model sees it. Two hundred simulated conversations in under five minutes, an eval suite that’s grown to over fifty checks. A great practical read for anyone building LLM features for end users.
-
-
-
-Oura Ring five ships June fourth at three hundred and ninety-nine dollars, forty percent smaller than the previous gen. Blood Pressure Signals and Nighttime Breathing arrive via Health Radar. Oura has filed confidentially for an eleven billion dollar IPO.
-
-
-
-And Blue Origin’s New Glenn rocket exploded during a green-run static fire at Cape Canaveral over the weekend. No injuries, but the program is grounded indefinitely, with Amazon Project Kuiper, Artemis, and Pentagon payloads now in limbo.
-
-
-
-For your one thing to try today. [pause] Try OpenAI Codex’s new slash goal feature on a small streamable build. Pick something tiny and visual. A click-to-feed pigeon mini-game, a pick-your-stream-snack wheel, a chat-controlled bouncing ball. Get ChatGPT to compress the idea into a hundred-word brief with explicit success tests, paste it after slash goal in Codex, and let it run end to end. Usually five to six minutes and one or two follow-up iterations. <soft>This works on multiple levels for you specifically. It’s a low-stakes way to internalise how agent-style coding tools actually behave. It gives the community a Krispy builds a thing in five minutes reaction clip. And it doubles as content for the streaming side and the day job. Anything you build can plausibly become a Discord widget or a server-side mini-tool later.</soft>
-
-
-
-<slow>That’s your digest for Monday. Have a good one.</slow>
+<slow>That's your digest for Tuesday, June second. Have a good one.</slow>
