@@ -1,51 +1,63 @@
-Good morning! [pause] Here's your daily AI digest for Tuesday, June second, two thousand and twenty-six. [pause]
+Good morning! [pause] Here's your daily AI digest for Thursday, June fourth. [pause] We've got a big one today, so let's get into it.
 
-Let's get straight to the biggest story. [long-pause]
+[long-pause]
 
-<loud>Anthropic just filed confidentially to go public.</loud> The S-1 landed with the SEC on June first. The valuation? <slow>Nine hundred and sixty-five billion dollars.</slow> Just shy of a trillion. [pause] For context, that is a bigger market cap than most countries' entire GDP. The company is running at forty-seven billion dollars in annualised revenue right now, up from ten billion at the end of last year. <soft>That's not a typo. That's roughly three hundred and seventy percent revenue growth in under twelve months.</soft>
+Starting with the top story. <loud>Microsoft just dropped seven new in-house AI models at Build 2026.</loud> [pause] Not fine-tuned from someone else's work, not distilled from GPT. These are trained from scratch, and they're calling the family MAI.
 
-And the reason for all of it? <higher-pitch>Claude Code.</higher-pitch> Anthropic's AI coding assistant is cited by basically everyone covering this story as the primary engine of that explosive growth. The company is targeting an IPO listing around October. <soft>So we may be watching the most valuable software company in history go public in a few months.</soft>
+The flagship is MAI-Thinking-1, a one-trillion-parameter mixture-of-experts reasoning model with 35 billion active parameters. [pause] It scored 97% on AIME 2025, 53% on SWE-Bench Pro, and blind human evaluators actually preferred it over Claude Sonnet 4.6. <soft>And here's the thing that caught my attention, they released a 109-page technical report that lays everything bare, the training data mix, the architecture decisions, all of it. That kind of transparency at this scale is genuinely rare.</soft>
 
-[pause]
+But it doesn't stop at one model. They also launched MAI-Code-1-Flash for fast coding, which is already shipping in VS Code and GitHub Copilot CLI. MAI-Image-2.5 ranked second on the Image Edit Arena. MAI-Transcribe-1.5 does 276 times real-time transcription speed across 43 languages. And MAI-Voice-2 for speech.
 
-Now, onto the hardware story dominating developer Twitter this week. NVIDIA had quite the run at Computex in Taiwan.
+<build-intensity>Satya Nadella's pitch was clear, Microsoft wants to be what he's calling the Frontier Intelligence Platform. Every company, whether AI-native or traditional enterprise, should be able to operate at the frontier with their own intelligence.</build-intensity> [pause] He also predicted AI compute will grow a thousand times in the next three years. <soft>That's a bold claim, but given what we're seeing, maybe not that far off.</soft>
 
-Jensen Huang showed up with three major releases. First: <loud>Nemotron 3 Ultra</loud>, a five hundred and fifty billion parameter open-weight model with a sparse mixture-of-experts design, fifty-five billion active parameters, topping the US open-weight LLM rankings at over three hundred tokens per second. That is very fast for a model that size.
+On the hardware side, they announced the Surface Laptop Ultra with up to one petaflop of AI compute and 128 gigs of unified memory. Plus Microsoft Scout, an always-on personal agent, the Majorana 2 quantum chip with a thousand-times reliability improvement, and Windows repositioned as an agent runtime. [pause] It's a full-stack play, models, hardware, agents, platform.
 
-Second: Cosmos 3, NVIDIA's omnimodal world model for physical AI, robotics, and simulation. It ranks number one across open-weight models on text-to-image and image-to-video leaderboards, and the weights are open for anyone to use. <soft>Jensen is making a deliberate play to own the open-source AI ecosystem at the same time he's selling everyone the chips to run it.</soft>
+[long-pause]
 
-And third: RTX Spark. A new Windows superchip with one hundred and twenty-eight gigabytes of unified memory and a full petaflop of AI performance. [chuckle] That is a personal laptop with more memory than most cloud servers from five years ago. It's arriving this fall from Dell, HP, Lenovo, and Microsoft. <soft>For streamers, local AI at that scale on a laptop is genuinely exciting. Think background tasks, voice recognition, real-time moderation. Watch this one.</soft>
+Moving to LLMs and coding tools. [pause] Claude Opus 4.8 landed on May 28th at the same price point, five dollars per million input tokens, 25 dollars per million output. It's now the strongest computer-use and browser-agent model available, scoring 84% on Online-Mind2Web. Anthropic says it's four times less likely than 4.7 to let bugs in its own code slip by without flagging them. <soft>And there's a new Dynamic Workflows feature in Claude Code that splits jobs across parallel subagents, which is pretty interesting for large-scale work.</soft>
 
-[pause]
+GitHub Copilot made a big pricing shift on June first, moving from request-based to usage-based billing with AI Credits. There's a new hundred-dollar-a-month Copilot Max tier for heavy users. <fast>But here's the market context, Copilot's share among professional developers has dropped from 67% to 51%. Cursor debuted at 18%, and Claude Code hit 10% in its first survey appearance.</fast>
 
-Speaking of coding tools, <loud>Microsoft Build 2026</loud> just opened today in San Francisco. The headline is Project Polaris, Microsoft's own homegrown AI coding model that will replace GPT-4 Turbo as the default for GitHub Copilot subscribers starting August. They're building their own model instead of just reselling OpenAI's. That's a meaningful strategic shift, and it's happening because developer demand has moved.
+[pause] And speaking of the coding wars, Microsoft is canceling Claude Code licenses across its Experiences and Devices division by June 30th, pushing engineers toward Copilot CLI. Meanwhile, <laugh-speak>Uber burned through its entire 2026 AI tools budget in just four months on Claude Code and Cursor.</laugh-speak> They've now capped spend at fifteen hundred dollars per month per employee.
 
-GitHub Copilot Workspace is finally out of beta, with fleet mode and autopilot for multi-step autonomous coding tasks without per-step approval. And Copilot now natively supports Anthropic's Claude alongside OpenAI models.
+<soft>On the open model front, Google released Gemma 4 12B under Apache 2.0. It's multimodal with an encoder-free design, no separate vision or audio towers, and it runs quantized on just 8 gigs of RAM. That's genuinely impressive for a model of this capability.</soft>
 
-On the market share side, developer surveys just came in. GitHub Copilot dropped from sixty-seven percent to fifty-one percent adoption among professional developers in twelve months. Cursor is now at eighteen percent. Claude Code at ten. But here's the interesting number: when senior developers were asked which tool they'd choose for their own daily work, <loud>forty-six percent picked Claude Code</loud>, the highest of any tool. Market share follows capability, just with a lag.
+One more here, Axiom Math raised 200 million dollars at a 1.6 billion dollar valuation for formal math verification. Their system solved all 12 Putnam exam problems and scored 99% on the Verina benchmark, which requires generating both code and a formal proof of correctness. <soft>For context, OpenAI o3 scored under 5% on that same benchmark.</soft>
 
-[pause]
+[long-pause]
 
-There's a business story worth sitting with for a second. A paper from the University of Virginia, Anthropic, and the Bank of Canada argues the US AI economy is growing at roughly two thousand six hundred percent per year in quality-adjusted terms. <soft>And almost none of it shows up in official GDP statistics.</soft>
+Now for industry and business news. [pause] <loud>President Trump signed an AI executive order on June second.</loud> The final version requires a 30-day voluntary review window where labs share covered frontier models with the government before launch. That's down from an originally proposed 90 days, which former AI czar David Sacks reportedly pushed back on. <soft>Importantly, it explicitly rules out mandatory licensing or permits for new AI models.</soft>
 
-The reason: prices fall almost as fast as capability improves, so revenues only grow modestly on paper while the actual economic power compounds underneath. The warning to policymakers is direct: finance ministries running ten-year budget projections off conventional data are <loud>materially underweight</loud> the probability of a labor market shock. <soft>The shark is in the water. The instruments can't see it yet.</soft>
+Alphabet is selling 80 billion dollars in stock to fund AI infrastructure, with plans to spend up to 190 billion on AI infra this year. [pause] <soft>Let that number sink in for a second. 190 billion dollars in a single year on AI infrastructure.</soft>
 
-[pause]
+Here's a fun one. Martin Scorsese, the Martin Scorsese, went public as a partner and adviser to Black Forest Labs, the team behind the FLUX image model. He's using it for storyboarding a new film, no AI-generated actors or sets, just storyboards. He called it creatively freeing. <soft>When a filmmaker of that stature endorses AI tools, even in a limited role, it shifts the conversation.</soft>
 
-Now for gaming, because I know you're here for this too.
+Anthropic expanded Project Glasswing, giving 150 new organizations across 15 countries access to Claude Mythos Preview. OpenAI launched Sites in Codex for building and deploying internal apps. <fast>And open-weight models now account for 69% of token volume on OpenRouter versus 31% for closed models, a real milestone for the open ecosystem.</fast>
 
-<build-intensity>AI companies are actively buying up game server infrastructure and repurposing data center capacity for AI compute workloads.</build-intensity> PCWorld called it out directly as a live operational threat to multiplayer gaming. Unity already ended its built-in Multiplay game server hosting support in March. The global game server market is set to nearly triple over the next decade, but the AI infrastructure grab is squeezing capacity right now, and it is affecting services game communities actually depend on.
+[long-pause]
 
-On the developer sentiment side, GDC twenty twenty-six data shows fifty-two percent of game developers now view generative AI negatively. That's up from thirty percent just a year ago. <soft>The gap between boardroom enthusiasm and developer reality is real, and it's growing.</soft>
+<build-intensity>Now, the gaming and AI section, and there's a lot to talk about today.</build-intensity>
 
-On the brighter side, GDC twenty twenty-six showed a live demo of an NPC that understood a voice command it had never been programmed to recognize, and responded in character. Ubisoft's Ghostwriter tool is now generating first-draft NPC dialogue so writers can focus on story rather than volume. Latitude launched Voyage, an AI RPG platform where players build their own worlds with AI-generated NPC interactions. [pause] <soft>The player experience side of AI is improving even as developer sentiment sours. Both things are true.</soft>
+Nvidia unveiled the RTX Spark superchip at Computex 2026. This is an Arm CPU plus Blackwell GPU platform with up to 20 CPU cores, 6,144 CUDA cores, 128 gigs of unified memory, and 300 gigabytes per second of memory bandwidth. [pause] <loud>It can run 120 billion parameter LLMs locally with up to one million tokens of context, and play AAA games at 1440p over 100 frames per second.</loud> Battery life in laptops exceeds 25 hours. RTX Spark laptops are coming this fall from ASUS, Dell, HP, Lenovo, Microsoft Surface, and MSI.
 
-[pause]
+<soft>Think about what that means for streaming. You could be running a local AI assistant, an LLM with a million tokens of context, while gaming at 1440p over 100fps, on a laptop with all-day battery life. That's the kind of setup that would have sounded absurd a year ago.</soft>
 
-<fast>Quick hits. Microsoft Build also launched Azure Agent Mesh, an open-sourced Windows Agent Framework, and Azure AI Foundry supporting models from everyone. OpenAI launched Rosalind Biodefense, its biology AI for pandemic preparedness and government partners. A hundred million permissively licensed training images landed on Hugging Face via the GPIC dataset, free to use commercially. And Claude Code had a rate limit reset last week after an Opus 4.8 bug caused sessions to spin up too many parallel subagents simultaneously. Anthropic fixed it and reset the counters.</fast>
+Morgan Stanley put out a report estimating AI could unlock 22 billion dollars in additional profits for the video game industry through automated coding, personalized gameplay, and smarter content pipelines. A 2025 ESA survey found 61% of major studios with over 100 employees are actively investing in player behavior AI.
 
-[pause]
+<soft>And here's a cool design detail, Dark Strand Interactive's Meridian Fault ships with an AI director that can detect when it's over-helping the player and deliberately withdraws assistance. That's a really thoughtful approach to AI in game design.</soft>
 
-One thing to try today. The Rundown AI dropped a step-by-step tutorial for building a short-form video content pipeline using Higgsfield and Claude Code. Install the CLI, have Claude interview you about your brand and content goals, generate video concepts, approve them, and let the workflow build polished short-form output. Then turn that workflow into a reusable skill so future campaigns are faster. If you stream, or if you manage content for a gaming community, this is the most practical automation tutorial I've seen in a while. The pro tip from the tutorial: run a few campaigns manually before you automate. The best workflows come from doing the thing yourself first.
+ASUS also showed off their Gaming AI tools at Computex, with intelligent performance tuning that helps gamers optimize and stay competitive. Local AI for gaming is officially becoming a product category.
 
-<slow>That's your digest for Tuesday, June second. Have a good one.</slow>
+[long-pause]
+
+<fast>Quick hits time. Reve 2.0 launched yesterday, a 4K image model that replaces text prompts with structured layouts. It ranked second on the text-to-image Arena behind GPT Image 2. Ideogram 4.0 also dropped the same day as a 9.3 billion parameter open-weight model, ranking first among open image models. Both are pushing layout control and precise text rendering.
+
+Alibaba's Fun-Realtime-TTS took the number one spot on the Speech Arena at 1,219 Elo. And ByteByteGo published a fantastic deep dive on how OpenAI built its internal data agent, a single LLM with just 13 curated tools over 90,000 datasets and 1.5 exabytes of data. Key lesson, they started with 40 tools and performance was bad. Cutting to 13 fixed everything.</fast>
+
+[long-pause]
+
+And finally, your one thing to try today. [pause] Give Google's Gemma 4 12B a spin locally through Ollama. It's multimodal, handles vision and audio with no separate encoder, it's Apache 2.0 licensed, and it runs on just 8 gigs of RAM. You could use it for analyzing screenshots, moderating image content, or drafting community responses, all on your own machine with zero API costs. <soft>It's a good way to get familiar with running models locally, and the barrier to entry has never been lower.</soft>
+
+[long-pause]
+
+<slow>That's your digest for Thursday. Have a good one.</slow>
